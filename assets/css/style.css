@@ -246,7 +246,11 @@
 	#bubble1{
 		position: absolute;
 		top: -228px;
-		right: -100px;
+		right: -75px;
+	}
+	.row{
+		margin-left: 0;
+		margin-right: 0;
 	}
 	#bubble1 img{
 		height: 86px;
@@ -403,7 +407,7 @@
 	}
 	body{
 		padding: 0;
-		background-image: url('../img/bac_s.png');
+		background-image: url('../img/bac_s1.png');
 		background-size: 100% auto;
 		background-attachment: fixed; 
 		background-repeat: no-repeat;
@@ -567,6 +571,7 @@
 		width: 30px;
 		vertical-align: middle;
 		margin-top: -4px;
+		margin-left: -35px;
 	}
 	.button1{
 		background-color: #FFB11B;
