@@ -1,0 +1,151 @@
+body .container-fluid{
+	background-image: url('../img/background.png');
+	background-size: 100%;
+	background-attachment: fixed; 
+}
+#logo{
+	margin-top: 20%;
+	margin-bottom: 25px;
+}
+.slogan{
+	color: #444444;
+	font-size: 32px;
+}
+.button{
+	background-color: #FFB11B;
+	color: white;
+	font-size: 24px;
+	padding: 15px 40px;
+	box-shadow: none;
+	border: 0px;
+	border-radius: 1px;
+	background-image: none;
+	text-shadow: none;
+	margin-top: 25px;
+}
+.button:hover{
+	background-color: #FCBE46;
+	color:white;
+	text-shadow: none;
+}
+#card1{
+	position: absolute;
+	right: -5px;
+	top: -150px;
+}
+#card1 img{
+	width: 240px;
+}
+#bubble1{
+	position: absolute;
+	top: -246px;
+	right: -180px;
+}
+#bubble1 img{
+	height: 86px;
+}
+#bubble2{
+	position: absolute;
+	right: 250px;
+	top: -85px;
+}
+#bubble2 img{
+	height: 65px;
+}
+#scroll{
+	position: absolute;
+	top: 740px;
+	left: 48%;
+	z-index: 1;
+}
+#scroll:hover img{
+	opacity: 0.7;
+	cursor: pointer;
+}
+#scroll img{
+	width: 55px;
+}
+.main{
+	margin-top: 40px;
+	background-color: rgba(255,255,255,0.9);
+	padding: 40px 10px 0 10px;
+	position: relative;
+}
+.main .text1{
+	font-size: 20px;
+	line-height: 35px;
+	width: 65%;
+	color: #595959;
+	margin-left: 50px;
+}
+.main .page2{
+	margin-top: 250px;
+	text-align: center;
+	height: 100%;
+	color: #595959;
+}
+.main .text2{
+	font-size: 20px;
+	line-height: 35px;
+	margin: 25px 50px 0 50px;
+}
+.main .page2 .row{
+	margin-left: 0;
+	text-align: center;
+	padding-left: 0px;
+}
+.main .page2 .span4{
+	padding: 0 40px;
+	margin-top: 90px;
+	margin-bottom: 90px;
+	width: 297.1px;
+	margin-left: 0;
+}
+.main .page2 .span4 h3{
+	color: #FFB11B;
+}
+.main .page2 .span4 p{
+	font-size: 16px;
+	color: #999999;
+	line-height: 30px;
+	margin-top: 20px;
+}
+.main .page2 .span4 img{
+	height: 90px;
+	margin-bottom: 45px;
+}
+.form{
+	background-color: rgba(250,214,137,0.9);
+	margin-top: 0;
+	color: white;
+}
+.form h2{
+	padding-top: 120px;
+}
+.form h3{
+	line-height: 40px;
+	margin-bottom: 60px;
+}
+.form .span4 .card2{
+	text-align: right;
+	margin-top: 100px;
+	position: relative;
+	z-index: 10;
+}
+.form .span4 .card2 .form-info{
+	height: 381px;
+	width: 240px;
+	position: absolute;
+	top:0;
+	right:0;
+	text-align: center;
+	z-index: 1;
+}
+.form .span4 .card2 .form-info h3{
+	color: #FFB11B;
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+.form .span4 .card2 img{
+	width: 240px;
+}
