@@ -79,7 +79,8 @@ body .container-fluid{
 	margin-left: 50px;
 }
 .main .page2{
-	margin-top: 250px;
+	margin-top: 150px;
+	padding-top: 100px;
 	text-align: center;
 	height: 100%;
 	color: #595959;
@@ -118,6 +119,7 @@ body .container-fluid{
 	background-color: rgba(250,214,137,0.9);
 	margin-top: 0;
 	color: white;
+	margin-bottom: 45px;
 }
 .form h2{
 	padding-top: 120px;
@@ -131,6 +133,7 @@ body .container-fluid{
 	margin-top: 100px;
 	position: relative;
 	z-index: 10;
+	margin-bottom: 100px;
 }
 .form .span4 .card2 .form-info{
 	height: 381px;
@@ -140,15 +143,45 @@ body .container-fluid{
 	right:0;
 	text-align: center;
 	z-index: 1;
+	padding-left: 25px;
 }
 .form .span4 .card2 .form-info h3{
 	color: #FFB11B;
-	margin-top: 35px;
-	margin-bottom: 35px;
+	margin-top: 30px;
+	margin-bottom: 25px;
 }
-.form .span4 .card2 .form-info form .text{
+.form .span4 .card2 .form-info form input[type="text"]{
 	width: 190px;
+	height: 35px;
+	border: 1px solid #DFDFDF;
+	border-radius: 1px;
+	margin-bottom: 8px;
+}
+.form .span4 .card2 .form-info form{
+	color: #999999;
+	font-size: 14px;
+}
+.form .span4 .card2 .form-info input[type="radio"]{
+	height: 20px;
+	width: 20px;
 }
 .form .span4 .card2 img{
 	width: 240px;
+}
+.button1{
+	background-color: #FFB11B;
+	color: white;
+	font-size: 14px;
+	padding: 10px 40px;
+	box-shadow: none;
+	border: 0px;
+	border-radius: 1px;
+	background-image: none;
+	text-shadow: none;
+	margin-top: 25px;
+}
+.button1:hover{
+	background-color: #FCBE46;
+	color:white;
+	text-shadow: none;
 }
