@@ -1,187 +1,384 @@
-body .container-fluid{
-	background-image: url('../img/bac.png');
-	background-size: 100%;
-	background-attachment: fixed; 
+@media screen and (min-width: 979px) {
+	body .container-fluid{
+		background-image: url('../img/bac.png');
+		background-size: 100%;
+		background-attachment: fixed; 
+		background-repeat: no-repeat;
+	}
+	body{
+		padding: 0;
+	}
+	#logo{
+		margin-top: 20%;
+		margin-bottom: 25px;
+	}
+	#logo img{
+		height:72px;
+	}
+	.slogan{
+		color: #444444;
+		font-size: 32px;
+	}
+	.button{
+		background-color: #FFB11B;
+		color: white;
+		font-size: 24px;
+		padding: 15px 40px;
+		box-shadow: none;
+		border: 0px;
+		border-radius: 1px;
+		background-image: none;
+		text-shadow: none;
+		margin-top: 25px;
+	}
+	.button:hover{
+		background-color: #FCBE46;
+		color:white;
+		text-shadow: none;
+	}
+	#card1{
+		position: absolute;
+		right: -5px;
+		top: -150px;
+	}
+	#card1 img{
+		width: 240px;
+	}
+	#bubble1{
+		position: absolute;
+		top: -246px;
+		right: -180px;
+	}
+	#bubble1 img{
+		height: 86px;
+	}
+	#bubble2{
+		position: absolute;
+		right: 250px;
+		top: -85px;
+	}
+	#bubble2 img{
+		height: 65px;
+	}
+	#scroll{
+		position: absolute;
+		top: 740px;
+		left: 48%;
+		z-index: 1;
+	}
+	#scroll:hover img{
+		opacity: 0.7;
+		cursor: pointer;
+	}
+	#scroll img{
+		width: 55px;
+	}
+	.main{
+		margin-top: 40px;
+		background-color: rgba(255,255,255,0.9);
+		padding: 40px 10px 0 10px;
+		position: relative;
+	}
+	.main .text1{
+		font-size: 20px;
+		line-height: 35px;
+		width: 65%;
+		color: #595959;
+		margin-left: 50px;
+	}
+	.page2{
+		margin-top: 150px;
+		padding-top: 100px;
+		text-align: center;
+		height: 100%;
+		color: #595959;
+	}
+	.text2{
+		font-size: 20px;
+		line-height: 35px;
+		margin: 25px 50px 0 50px;
+	}
+	.page2 .row{
+		margin-left: 0;
+		text-align: center;
+		padding-left: 0px;
+	}
+	.page2 .col-md-4{
+		padding: 0 40px;
+		margin-top: 90px;
+		margin-bottom: 90px;
+		width: 297.1px;
+		margin-left: 0;
+	}
+	.page2 .col-md-4 h3{
+		color: #FFB11B;
+	}
+	.page2 .col-md-4 p{
+		font-size: 16px;
+		color: #999999;
+		line-height: 30px;
+		margin-top: 20px;
+	}
+	.page2 .col-md-4 img{
+		height: 90px;
+		margin-bottom: 45px;
+	}
+	.form{
+		background-color: rgba(250,214,137,0.9);
+		margin: 0 0 45px 0;
+
+		color: white;
+	}
+	.form h2{
+		padding-top: 120px;
+	}
+	.form h3{
+		line-height: 40px;
+		margin-bottom: 60px;
+	}
+	.form .col-md-4 .card2{
+		text-align: right;
+		margin-top: 100px;
+		position: relative;
+		z-index: 10;
+		margin-bottom: 100px;
+	}
+	.form .col-md-4 .card2 .form-info{
+		height: 381px;
+		width: 240px;
+		position: absolute;
+		top:0;
+		right:0;
+		text-align: center;
+		z-index: 1;
+		
+	}
+	.form .col-md-4 .card2 .form-info h3{
+		color: #FFB11B;
+		margin-top: 30px;
+		margin-bottom: 25px;
+	}
+	.form .col-md-4 .card2 .form-info form input[type="text"]{
+		width: 190px;
+		height: 35px;
+		border: 1px solid #DFDFDF;
+		border-radius: 1px;
+		margin-bottom: 8px;
+	}
+	.form .col-md-4 .card2 .form-info form{
+		color: #999999;
+		font-size: 14px;
+	}
+	.form .col-md-4 .card2 .form-info input[type="radio"]{
+		height: 20px;
+		width: 20px;
+	}
+	.form .col-md-4 .card2 img{
+		width: 240px;
+	}
+	.button1{
+		background-color: #FFB11B;
+		color: white;
+		font-size: 14px;
+		padding: 10px 40px;
+		box-shadow: none;
+		border: 0px;
+		border-radius: 1px;
+		background-image: none;
+		text-shadow: none;
+		margin-top: 25px;
+	}
+	.button1:hover{
+		background-color: #FCBE46;
+		color:white;
+		text-shadow: none;
+	}   
 }
-#logo{
-	margin-top: 20%;
-	margin-bottom: 25px;
-}
-.slogan{
-	color: #444444;
-	font-size: 32px;
-}
-.button{
-	background-color: #FFB11B;
-	color: white;
-	font-size: 24px;
-	padding: 15px 40px;
-	box-shadow: none;
-	border: 0px;
-	border-radius: 1px;
-	background-image: none;
-	text-shadow: none;
-	margin-top: 25px;
-}
-.button:hover{
-	background-color: #FCBE46;
-	color:white;
-	text-shadow: none;
-}
-#card1{
-	position: absolute;
-	right: -5px;
-	top: -150px;
-}
-#card1 img{
-	width: 240px;
-}
-#bubble1{
-	position: absolute;
-	top: -246px;
-	right: -180px;
-}
-#bubble1 img{
-	height: 86px;
-}
-#bubble2{
-	position: absolute;
-	right: 250px;
-	top: -85px;
-}
-#bubble2 img{
-	height: 65px;
-}
-#scroll{
-	position: absolute;
-	top: 740px;
-	left: 48%;
-	z-index: 1;
-}
-#scroll:hover img{
-	opacity: 0.7;
-	cursor: pointer;
-}
-#scroll img{
-	width: 55px;
-}
-.main{
-	margin-top: 40px;
-	background-color: rgba(255,255,255,0.9);
-	padding: 40px 10px 0 10px;
-	position: relative;
-}
-.main .text1{
-	font-size: 20px;
-	line-height: 35px;
-	width: 65%;
-	color: #595959;
-	margin-left: 50px;
-}
-.main .page2{
-	margin-top: 150px;
-	padding-top: 100px;
-	text-align: center;
-	height: 100%;
-	color: #595959;
-}
-.main .text2{
-	font-size: 20px;
-	line-height: 35px;
-	margin: 25px 50px 0 50px;
-}
-.main .page2 .row{
-	margin-left: 0;
-	text-align: center;
-	padding-left: 0px;
-}
-.main .page2 .span4{
-	padding: 0 40px;
-	margin-top: 90px;
-	margin-bottom: 90px;
-	width: 297.1px;
-	margin-left: 0;
-}
-.main .page2 .span4 h3{
-	color: #FFB11B;
-}
-.main .page2 .span4 p{
-	font-size: 16px;
-	color: #999999;
-	line-height: 30px;
-	margin-top: 20px;
-}
-.main .page2 .span4 img{
-	height: 90px;
-	margin-bottom: 45px;
-}
-.form{
-	background-color: rgba(250,214,137,0.9);
-	margin-top: 0;
-	color: white;
-	margin-bottom: 45px;
-}
-.form h2{
-	padding-top: 120px;
-}
-.form h3{
-	line-height: 40px;
-	margin-bottom: 60px;
-}
-.form .span4 .card2{
-	text-align: right;
-	margin-top: 100px;
-	position: relative;
-	z-index: 10;
-	margin-bottom: 100px;
-}
-.form .span4 .card2 .form-info{
-	height: 381px;
-	width: 240px;
-	position: absolute;
-	top:0;
-	right:0;
-	text-align: center;
-	z-index: 1;
-	padding-left: 25px;
-}
-.form .span4 .card2 .form-info h3{
-	color: #FFB11B;
-	margin-top: 30px;
-	margin-bottom: 25px;
-}
-.form .span4 .card2 .form-info form input[type="text"]{
-	width: 190px;
-	height: 35px;
-	border: 1px solid #DFDFDF;
-	border-radius: 1px;
-	margin-bottom: 8px;
-}
-.form .span4 .card2 .form-info form{
-	color: #999999;
-	font-size: 14px;
-}
-.form .span4 .card2 .form-info input[type="radio"]{
-	height: 20px;
-	width: 20px;
-}
-.form .span4 .card2 img{
-	width: 240px;
-}
-.button1{
-	background-color: #FFB11B;
-	color: white;
-	font-size: 14px;
-	padding: 10px 40px;
-	box-shadow: none;
-	border: 0px;
-	border-radius: 1px;
-	background-image: none;
-	text-shadow: none;
-	margin-top: 25px;
-}
-.button1:hover{
-	background-color: #FCBE46;
-	color:white;
-	text-shadow: none;
+@media screen and (max-width: 979px) {
+	.col-xs-12{
+		padding: 0;
+	}
+	body{
+		padding: 0;
+		background-image: url('../img/bac_s.png');
+		background-size: 100% auto;
+		background-attachment: fixed; 
+		background-repeat: no-repeat;
+		
+	}
+	body .container-fluid{
+		margin: 0;
+		
+		text-align: center;
+	}
+	#logo{
+		margin-top: 70px;
+		margin-bottom: 25px;
+	}
+    #logo img{
+		height:38px;
+	}    
+	.slogan{
+		font-size: 22px;
+		margin-left: 45px;
+		margin-right: 45px;
+		line-height: 38px;
+	}
+	.main{
+		text-align: center;
+	}
+	#bubble1{
+		display: none;
+	}
+	#bubble2{
+		display: none;
+	}
+	.button{
+		background-color: #FFB11B;
+		color: white;
+		font-size: 18px;
+		padding: 15px;
+		width: 90%;
+		box-shadow: none;
+		border: 0px;
+		border-radius: 1px;
+		background-image: none;
+		text-shadow: none;
+		margin-top: 25px
+	}
+	.button:hover{
+		background-color: #FCBE46;
+		color:white;
+		text-shadow: none;
+	}
+	#card1{
+		margin-top: 50px;
+		margin-bottom: 30px;
+	}
+	#card1 img{
+		width: 300px;
+	}
+	.text1{
+		font-size: 14px;
+		line-height: 30px;
+		color: #595959;
+		margin-bottom: 30px;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.page2{
+		background-color: white;
+		width: 100%;
+		padding-top: 35px;
+	}
+	.page2 h1{
+		font-size: 22px;
+		margin-bottom: 15px;
+		color: #595959;
+	}
+	.page2 .text2{
+		font-size: 14px;
+		line-height: 30px;
+		padding-bottom: 30px;
+		border-bottom: 1px solid #efefef;
+		color: #595959;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.page2 .row .col-xs-12 img{
+		width: 40px;
+		display: inline-block;
+		margin-right: 15px;
+		margin-bottom: 15px;
+		margin-top: 30px;
+		padding-bottom: 20px;
+	}
+	.page2 .row .col-xs-12 h3{
+		display: inline-block;
+		font-size: 22px;
+		color: #FFB11B;
+	}
+	.page2 .row .col-xs-12 p{
+		color: #999999;
+		padding-bottom: 30px;
+		border-bottom: 1px solid #efefef;
+		margin-bottom: 0;
+		line-height: 30px;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: -10px;
+	}
+	.form{
+		background-color: #FAD689;
+		margin-top: 0;
+		color: white;
+	}
+	.form h2{
+		font-size: 22px;
+		margin-top: 0px;
+		padding-top: 40px;
+	}
+	.form h3{
+		font-size: 18px;
+		margin-top: 15px;
+		line-height: 30px;
+		margin-bottom: 55px;
+	}
+	.card2 img{
+		display: none;
+	}
+	.card2 .form-info{
+		width: 305px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		z-index: 1;
+		background-image: url('../img/card2.png');
+		background-size: 100%;
+	}
+	.card2 .form-info h3{
+		display: none;
+	}
+	.card2 .form-info form input[type="text"]{
+		width: 260px;
+		height: 45px;
+		border: 1px solid #DFDFDF;
+		border-radius: 1px;
+		margin-bottom: 10px;
+	}
+	.card2 .form-info form{
+		color: #999999;
+		font-size: 16px;
+		padding-top: 45px;
+	}
+	.card2 .form-info input[type="radio"]{
+		height: 30px;
+		width: 30px;
+		vertical-align: middle;
+		margin-top: 0px;
+		
+	}
+	.button1{
+		background-color: #FFB11B;
+		color: white;
+		font-size: 16px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		box-shadow: none;
+		border: 0px;
+		border-radius: 1px;
+		background-image: none;
+		text-shadow: none;
+		margin-top: 25px;
+		margin-bottom: 65px;
+		width: 260px;
+	}
+	.button1:hover{
+		background-color: #FCBE46;
+		color:white;
+		text-shadow: none;
+	}  
 }
