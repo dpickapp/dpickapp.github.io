@@ -172,6 +172,7 @@
 	.form .col-md-4 .card2 .form-info input[type="radio"]{
 		height: 20px;
 		width: 20px;
+		margin-left: -25px;
 	}
 	.radio label input{
 		 margin-top:2px;
@@ -409,9 +410,8 @@
 		padding: 0;
 		background-image: url('../img/bac_s1.png');
 		background-size: 100% auto;
-		background-attachment: fixed; 
+		/*background-attachment: fixed; */
 		background-repeat: no-repeat;
-		
 	}
 	body .container-fluid{
 		margin: 0;
@@ -468,7 +468,7 @@
 	.text1{
 		font-size: 16px;
 		line-height: 30px;
-		color: #595959;
+		color: white;
 		margin-bottom: 30px;
 		width: 90%;
 		margin-left: auto;
