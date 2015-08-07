@@ -146,6 +146,9 @@ body .container-fluid{
 	margin-top: 35px;
 	margin-bottom: 35px;
 }
+.form .span4 .card2 .form-info form .text{
+	width: 190px;
+}
 .form .span4 .card2 img{
 	width: 240px;
 }
