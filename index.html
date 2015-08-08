@@ -25,6 +25,33 @@
           }); 
         });
     </script>
+    <script>
+      function check_form(){
+          var uni = document.forms["Dpickform"]["entry.1820597178"].value;
+          var dep = document.forms["Dpickform"]["entry.1846109301"].value;
+          var mail = document.forms["Dpickform"]["entry.34462943"].value;
+          var sex = document.forms["Dpickform"]["entry.1523064061"].value;
+          if (uni == null || uni == "") {
+              alert("大学名を正しく入力してください。");
+              return false;
+          }
+          if (dep == null || dep == ""){
+              alert("学部を正しく入力してください。");
+              return false;
+          }
+          if (mail == null || mail == ""){
+              alert("大学メールを正しく入力してください。");
+              return false;
+          }
+          if (sex == null || sex == ""){
+              alert("せいべつを正しく入力してください。");
+              return false;
+          }
+          else{
+            return true;
+          }
+      }
+    </script>
   </head>
   <body>
       <div class="container-fluid">
@@ -97,12 +124,12 @@
                       }
                     </script>
                     <h3>Wcard</h3>
-                    <form id="formID" method="post" action="https://docs.google.com/forms/d/1RniOByj6TO_wJmQ1sJEg31kJzTQSaY5dYjyh7gsJfTY/formResponse" target="hidden_iframe">
-                      <input type="text" name="entry.1820597178" placeholder="大学名" size="14" ></br>
-                      <input type="text" name="entry.1846109301" placeholder="学部" size="14"></br>
-                      <input type="text" name="entry.34462943" placeholder="大学メール" size="14"></br>
+                    <form id="formID" name="Dpickform"  method="post" action="https://docs.google.com/forms/d/1RniOByj6TO_wJmQ1sJEg31kJzTQSaY5dYjyh7gsJfTY/formResponse" target="hidden_iframe" onsubmit="return check_form()">
+                      <input type="text" name="entry.1820597178" placeholder="大学名" size="14"  required oninvalid="this.setCustomValidity('大学名を正しく入力してください。')" oninput="setCustomValidity('')" ></br>
+                      <input type="text" name="entry.1846109301" placeholder="学部" size="14"  required oninvalid="this.setCustomValidity('学部を正しく入力してください。')" oninput="setCustomValidity('')" ></br>
+                      <input type="email" name="entry.34462943" placeholder="大学メール" size="14"  required oninvalid="this.setCustomValidity('大学メールを正しく入力してください。')" oninput="setCustomValidity('')" ></br>
                       <div class="radio"> 
-                        <label style="margin-right: 25px;"><input type="radio" name="entry.1523064061" value="0" checked> 男性</label>
+                        <label style="margin-right: 25px;"><input type="radio" name="entry.1523064061" value="0" checked required oninvalid="this.setCustomValidity('せいべつを正しく入力してください。')" oninput="setCustomValidity('')" > 男性</label>
                         <label><input type="radio" name="entry.1523064061" value="1"> 女性</label>
                       </div>
                       <input type="hidden" name="pageHistory" value="0">
