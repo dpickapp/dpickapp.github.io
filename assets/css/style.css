@@ -9,7 +9,7 @@
 		padding: 0;
 	}
 	#logo{
-		margin-top: 20%;
+		margin-top: 12%;
 		margin-bottom: 25px;
 	}
 	#logo img{
@@ -24,17 +24,38 @@
 		color: white;
 		font-size: 24px;
 		padding: 15px 40px;
-		box-shadow: none;
+		box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
 		border: 0px;
 		border-radius: 1px;
 		background-image: none;
 		text-shadow: none;
 		margin-top: 25px;
 	}
-	.button:hover, .button:active, .button:focus{
-		background-color: #FCBE46;
+	.button:hover, .button:active:focus, .button:focus, .button:active{
+		background-color: #FFC408;
 		color:white;
 		text-shadow: none;
+		border: none;
+		outline: none;
+		box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+	}
+	.button2{
+		background-color: transparent;
+		color: #FFC408;
+		font-size: 24px;
+		padding: 10px 30px;
+		border: 3px solid #FFC408;
+		border-radius: 4px;
+		text-shadow: none;
+		margin-bottom: 60px;
+	}
+	.button2:hover, .button2:focus{
+		opacity: 0.7;
+		border: 3px solid #FFC408;
+		border-radius: 4px;
+		color: #FFC408;
+		background-color: transparent;
+		outline: none;
 	}
 	#card1{
 		position: absolute;
@@ -62,7 +83,7 @@
 	}
 	#scroll{
 		position: absolute;
-		top: 740px;
+		top: 680px;
 		left: 48%;
 		z-index: 1;
 	}
@@ -88,7 +109,7 @@
 	}
 	.page2{
 		margin-top: 150px;
-		padding-top: 80px;
+		padding-top: 60px;
 		text-align: center;
 		height: 100%;
 		color: #595959;
@@ -105,8 +126,8 @@
 	}
 	.page2 .col-md-4{
 		padding: 0 40px;
-		margin-top: 90px;
-		margin-bottom: 90px;
+		margin-top: 80px;
+		margin-bottom: 35px;
 		width: 33.3%;
 		margin-left: 0;
 	}
@@ -164,6 +185,7 @@
 		border: 1px solid #DFDFDF;
 		border-radius: 1px;
 		margin-bottom: 8px;
+		padding-left: 5px;
 	}
 	.form .col-md-4 .card2 .form-info form{
 		color: #999999;
@@ -193,7 +215,7 @@
 		margin-top: 25px;
 	}
 	.button1:hover, .button1:active, .button1:focus{
-		background-color: #FCBE46;
+		background-color: #FFC408;
 		color:white;
 		text-shadow: none;
 	}   
@@ -209,7 +231,7 @@
 		padding: 0;
 	}
 	#logo{
-		margin-top: 20%;
+		margin-top: 12%;
 		margin-bottom: 25px;
 	}
 	#logo img{
@@ -224,17 +246,20 @@
 		color: white;
 		font-size: 24px;
 		padding: 15px 40px;
-		box-shadow: none;
+		box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
 		border: 0px;
 		border-radius: 1px;
 		background-image: none;
 		text-shadow: none;
 		margin-top: 25px;
 	}
-	.button:hover, .button:active, .button:focus{
-		background-color: #FCBE46;
+	.button:hover, .button:active:focus, .button:focus, .button:active{
+		background-color: #FFC408;
 		color:white;
 		text-shadow: none;
+		border: none;
+		outline: none;
+		box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
 	}
 	#card1{
 		position: absolute;
@@ -266,7 +291,7 @@
 	}
 	#scroll{
 		position: absolute;
-		top: 740px;
+		top: 680px;
 		left: 48%;
 		z-index: 1;
 	}
@@ -309,8 +334,8 @@
 	}
 	.page2 .col-md-4{
 		padding: 0 40px;
-		margin-top: 90px;
-		margin-bottom: 90px;
+		margin-top: 80px;
+		margin-bottom: 35px;
 		width: 33.3%;
 		margin-left: 0;
 	}
@@ -326,6 +351,24 @@
 	.page2 .col-md-4 img{
 		height: 90px;
 		margin-bottom: 45px;
+	}
+		.button2{
+		background-color: transparent;
+		color: #FFC408;
+		font-size: 24px;
+		padding: 10px 30px;
+		border: 3px solid #FFC408;
+		border-radius: 4px;
+		text-shadow: none;
+		margin-bottom: 60px;
+	}
+	.button2:hover, .button2:focus{
+		opacity: 0.7;
+		border: 3px solid #FFC408;
+		border-radius: 4px;
+		color: #FFC408;
+		background-color: transparent;
+		outline: none;
 	}
 	.form{
 		background-color: rgba(250,214,137,0.9);
@@ -368,6 +411,7 @@
 		border: 1px solid #DFDFDF;
 		border-radius: 1px;
 		margin-bottom: 8px;
+		padding-left: 5px;
 	}
 	.form .col-md-4 .card2 .form-info form{
 		color: #999999;
@@ -396,7 +440,7 @@
 		margin-top: 25px;
 	}
 	.button1:hover, .button1:active, .button1:focus{
-		background-color: #FCBE46;
+		background-color: #FFC408;
 		color:white;
 		text-shadow: none;
 	}   
@@ -446,7 +490,7 @@
 		font-size: 18px;
 		padding: 15px;
 		width: 90%;
-		box-shadow: none;
+		box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
 		border: 0px;
 		border-radius: 1px;
 		background-image: none;
@@ -454,7 +498,7 @@
 		margin-top: 25px
 	}
 	.button:hover, .button:active, .button:focus{
-		background-color: #FCBE46;
+		background-color: #FFC408;
 		color:white;
 		text-shadow: none;
 	}
@@ -560,6 +604,7 @@
 		border: 1px solid #DFDFDF;
 		border-radius: 1px;
 		margin-bottom: 10px;
+		padding-left: 5px;
 	}
 	.card2 .form-info form{
 		color: #999999;
@@ -589,7 +634,7 @@
 		width: 260px;
 	}
 	.button1:hover, .button1:active, .button1:focus{
-		background-color: #FCBE46;
+		background-color: #FFC408;
 		color:white;
 		text-shadow: none;
 	}  
