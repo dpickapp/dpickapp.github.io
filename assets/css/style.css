@@ -516,7 +516,7 @@
 	body{
 		padding: 0;
 		background-image: url('../img/bac_s1.png');
-		background-size: 100% auto;
+		background-size: 125% auto;
 		/*background-attachment: fixed; */
 		background-repeat: no-repeat;
 	}
@@ -654,7 +654,7 @@
 		display: none;
 	}
 	.card2 .form-info{
-		width: 305px;
+		width: 290px;
 		margin-left: auto;
 		margin-right: auto;
 		text-align: center;
