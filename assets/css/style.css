@@ -24,9 +24,9 @@
 		color: white;
 		font-size: 24px;
 		padding: 15px 40px;
-		box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+		box-shadow: 0px 4px 0px #DD9915;
 		border: 0px;
-		border-radius: 1px;
+		border-radius: 4px;
 		background-image: none;
 		text-shadow: none;
 		margin-top: 25px;
@@ -37,7 +37,9 @@
 		text-shadow: none;
 		border: none;
 		outline: none;
-		box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+		box-shadow: 0px 2px 0px #DD9915;
+		margin-top: 27px;
+		margin-bottom: -2px;
 	}
 	.button2{
 		background-color: transparent;
@@ -49,13 +51,14 @@
 		text-shadow: none;
 		margin-bottom: 60px;
 	}
-	.button2:hover, .button2:focus{
+	.button2:hover, .button2:focus, .button2:active:focus, .button2:active{
 		opacity: 0.7;
 		border: 3px solid #FFC408;
 		border-radius: 4px;
 		color: #FFC408;
 		background-color: transparent;
 		outline: none;
+		box-shadow: none;
 	}
 	#card1{
 		position: absolute;
@@ -103,7 +106,7 @@
 	.main .text1{
 		font-size: 18px;
 		line-height: 35px;
-		width: 60%;
+		width: 62%;
 		color: #595959;
 		margin-left: 50px;
 	}
@@ -142,7 +145,7 @@
 	}
 	.page2 .col-md-4 img{
 		height: 90px;
-		margin-bottom: 45px;
+		margin-bottom: 35px;
 	}
 	.form{
 		background-color: rgba(250,214,137,0.9);
@@ -180,7 +183,7 @@
 		margin-bottom: 25px;
 	}
 	.form .col-md-4 .card2 .form-info form input[type="text"], .form .col-md-4 .card2 .form-info form input[type="email"]{
-		width: 190px;
+		width: 200px;
 		height: 35px;
 		border: 1px solid #DFDFDF;
 		border-radius: 1px;
@@ -189,7 +192,7 @@
 	}
 	.form .col-md-4 .card2 .form-info form{
 		color: #999999;
-		font-size: 14px;
+		font-size: 13px;
 	}
 	.form .col-md-4 .card2 .form-info input[type="radio"]{
 		height: 20px;
@@ -207,9 +210,9 @@
 		color: white;
 		font-size: 14px;
 		padding: 10px 40px;
-		box-shadow: none;
+		box-shadow: 0px 3px 0px #DD9915;
 		border: 0px;
-		border-radius: 1px;
+		border-radius: 4px;
 		background-image: none;
 		text-shadow: none;
 		margin-top: 25px;
@@ -218,6 +221,9 @@
 		background-color: #FFC408;
 		color:white;
 		text-shadow: none;
+		box-shadow: 0px 2px 0px #DD9915;
+		margin-top: 26px;
+		margin-bottom: -1px;
 	}   
 }
 @media screen and (min-width: 992px) and (max-width: 1199px){
@@ -246,9 +252,9 @@
 		color: white;
 		font-size: 24px;
 		padding: 15px 40px;
-		box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+		box-shadow: 0px 4px 0px #DD9915;
 		border: 0px;
-		border-radius: 1px;
+		border-radius: 4px;
 		background-image: none;
 		text-shadow: none;
 		margin-top: 25px;
@@ -259,7 +265,9 @@
 		text-shadow: none;
 		border: none;
 		outline: none;
-		box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+		box-shadow: 0px 2px 0px #DD9915;
+		margin-top: 27px;
+		margin-bottom: -2px;
 	}
 	#card1{
 		position: absolute;
@@ -350,9 +358,9 @@
 	}
 	.page2 .col-md-4 img{
 		height: 90px;
-		margin-bottom: 45px;
+		margin-bottom: 35px;
 	}
-		.button2{
+	.button2{
 		background-color: transparent;
 		color: #FFC408;
 		font-size: 24px;
@@ -373,7 +381,6 @@
 	.form{
 		background-color: rgba(250,214,137,0.9);
 		margin: 0 0 45px 0;
-
 		color: white;
 	}
 	.form h2{
@@ -406,7 +413,7 @@
 		margin-bottom: 25px;
 	}
 	.form .col-md-4 .card2 .form-info form input[type="text"], .form .col-md-4 .card2 .form-info form input[type="email"]{
-		width: 190px;
+		width: 200px;
 		height: 35px;
 		border: 1px solid #DFDFDF;
 		border-radius: 1px;
@@ -415,7 +422,7 @@
 	}
 	.form .col-md-4 .card2 .form-info form{
 		color: #999999;
-		font-size: 14px;
+		font-size: 13px;
 	}
 	.form .col-md-4 .card2 .form-info input[type="radio"]{
 		height: 20px;
@@ -432,9 +439,9 @@
 		color: white;
 		font-size: 14px;
 		padding: 10px 40px;
-		box-shadow: none;
+		box-shadow: 0px 3px 0px #DD9915;
 		border: 0px;
-		border-radius: 1px;
+		border-radius: 4px;
 		background-image: none;
 		text-shadow: none;
 		margin-top: 25px;
@@ -443,8 +450,10 @@
 		background-color: #FFC408;
 		color:white;
 		text-shadow: none;
+		box-shadow: 0px 2px 0px #DD9915;
+		margin-top: 26px;
+		margin-bottom: -1px;
 	}   
-
 }
 @media screen and (max-width: 991px) {
 	.col-xs-12{
@@ -490,17 +499,21 @@
 		font-size: 18px;
 		padding: 15px;
 		width: 90%;
-		box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+		box-shadow: 0px 4px 0px #DD9915;
 		border: 0px;
-		border-radius: 1px;
+		border-radius: 4px;
 		background-image: none;
 		text-shadow: none;
 		margin-top: 25px
 	}
-	.button:hover, .button:active, .button:focus{
+	.button:hover, .button:active, .button:focus, .button:active:focus{
 		background-color: #FFC408;
 		color:white;
 		text-shadow: none;
+		box-shadow: 0px 2px 0px #DD9915;
+		outline: none;
+		margin-top: 27px;
+		margin-bottom: -2px;
 	}
 	#card1{
 		margin-top: 50px;
@@ -624,9 +637,9 @@
 		font-size: 16px;
 		padding-top: 10px;
 		padding-bottom: 10px;
-		box-shadow: none;
+		box-shadow: 0px 3px 0px #DD9915;
 		border: 0px;
-		border-radius: 1px;
+		border-radius: 4px;
 		background-image: none;
 		text-shadow: none;
 		margin-top: 25px;
@@ -637,5 +650,8 @@
 		background-color: #FFC408;
 		color:white;
 		text-shadow: none;
+		box-shadow: 0px 2px 0px #DD9915;
+		margin-top: 26px;
+		margin-bottom: 64px;
 	}  
 }

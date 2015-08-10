@@ -10,11 +10,12 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
-    <script  src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>
         $(function(){
           $('#scroll').click(function(){ 
-            $('html,body').animate({scrollTop:'835px'}, 600);
+            $('html,body').animate({scrollTop:'800px'}, 600);
             return false;
           }); 
         });
@@ -70,7 +71,7 @@
                 <img src="assets/img/dpick.png" />
               </div>
               <h2 class="slogan">大隈さんが変える、あなたのワセダライフ</h2>
-                <a href="#form" id="call"><button type="button" class="btn btn-default button">ここから始まります</button></a>
+                <a href="#form" id="call"><button type="button" class="btn btn-default button">ここから始まります  <i class="fa fa-angle-down fa-lg"></i></button></a>
               <div id="scroll" class="hidden-xs hidden-sm">
                 <a href="#page2"><img src="assets/img/scroll-down.png" /></a>
               </div>
@@ -109,7 +110,7 @@
                       </div>
                     </div>
                     <div class="row">
-                      <a href="#form" id="call1"><button type="button" class="btn btn-default button2 hidden-xs hidden-sm">ここから始まります</button></a>
+                      <a href="#form" id="call1"><button type="button" class="btn btn-default button2 hidden-xs hidden-sm">ここから始まります  <i class="fa fa-angle-down fa-lg"></i></button></a>
                     </div>
                   </div>
               </div>
@@ -134,9 +135,9 @@
                     </script>
                     <h3>Wcard</h3>
                     <form id="formID" name="Dpickform"  method="post" action="https://docs.google.com/forms/d/1RniOByj6TO_wJmQ1sJEg31kJzTQSaY5dYjyh7gsJfTY/formResponse" target="hidden_iframe" onsubmit="return check_form()">
-                      <input type="text" name="entry.1820597178" placeholder="大学名" size="14"  required oninvalid="this.setCustomValidity('大学名を正しく入力してください。')" oninput="setCustomValidity('')" ></br>
-                      <input type="text" name="entry.1846109301" placeholder="学部" size="14"  required oninvalid="this.setCustomValidity('学部を正しく入力してください。')" oninput="setCustomValidity('')" ></br>
-                      <input type="email" name="entry.34462943" placeholder="大学メール" size="14"  required oninvalid="this.setCustomValidity('大学メールを正しく入力してください。')" oninput="setCustomValidity('')" ></br>
+                      <input type="text" name="entry.1820597178" placeholder="学校：早稲田大学" size="13"  required oninvalid="this.setCustomValidity('大学名を正しく入力してください。')" oninput="setCustomValidity('')" ></br>
+                      <input type="text" name="entry.1846109301" placeholder="学部：基幹理工学部" size="13"  required oninvalid="this.setCustomValidity('学部を正しく入力してください。')" oninput="setCustomValidity('')" ></br>
+                      <input type="email" name="entry.34462943" placeholder="学校メール：w@fuji.waseda.jp" size="13"  required oninvalid="this.setCustomValidity('大学メールを正しく入力してください。')" oninput="setCustomValidity('')" ></br>
                       <div class="radio"> 
                         <label style="margin-right: 25px;"><input type="radio" name="entry.1523064061" value="0" checked required oninvalid="this.setCustomValidity('せいべつを正しく入力してください。')" oninput="setCustomValidity('')" > 男性</label>
                         <label><input type="radio" name="entry.1523064061" value="1"> 女性</label>
