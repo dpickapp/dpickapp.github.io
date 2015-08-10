@@ -1,9 +1,14 @@
+	.row{
+		margin-left: 0;
+		margin-right: 0;
+	}
 @media screen and (min-width: 1200px) {
 	body .container-fluid{
 		background-image: url('../img/bac.png');
 		background-size: 100%;
 		background-attachment: fixed; 
 		background-repeat: no-repeat;
+		position: relative;
 	}
 	body{
 		padding: 0;
@@ -104,7 +109,7 @@
 		position: relative;
 	}
 	.main .text1{
-		font-size: 18px;
+		font-size: 21px;
 		line-height: 35px;
 		width: 62%;
 		color: #595959;
@@ -149,16 +154,15 @@
 	}
 	.form{
 		background-color: rgba(250,214,137,0.9);
-		margin: 0 0 45px 0;
-
+		margin: 0 0 90px 0;
 		color: white;
 	}
 	.form h2{
-		padding-top: 120px;
+		padding-top: 100px;
 	}
 	.form h3{
 		line-height: 40px;
-		margin-bottom: 60px;
+		margin-bottom: 40px;
 	}
 	.form .col-md-4 .card2{
 		text-align: right;
@@ -179,8 +183,8 @@
 	}
 	.form .col-md-4 .card2 .form-info h3{
 		color: #FFB11B;
-		margin-top: 30px;
-		margin-bottom: 25px;
+		margin-top: 25px;
+		margin-bottom: 15px;
 	}
 	.form .col-md-4 .card2 .form-info form input[type="text"], .form .col-md-4 .card2 .form-info form input[type="email"]{
 		width: 200px;
@@ -192,7 +196,7 @@
 	}
 	.form .col-md-4 .card2 .form-info form{
 		color: #999999;
-		font-size: 13px;
+		font-size: 14px;
 	}
 	.form .col-md-4 .card2 .form-info input[type="radio"]{
 		height: 20px;
@@ -204,6 +208,13 @@
 	}
 	.form .col-md-4 .card2 img{
 		width: 240px;
+	}
+	.safe{
+		width: 200px; 
+		text-align:left; 
+		margin-left:22px; 
+		font-size:10px; 
+		color: #CFCFCF;
 	}
 	.button1{
 		background-color: #FFB11B;
@@ -225,6 +236,24 @@
 		margin-top: 26px;
 		margin-bottom: -1px;
 	}   
+	.footer{
+		background-color:#F3F3F3; 
+		height:40px;
+		text-align: center;
+		padding: 20px 0 35px 0;
+		font-size: 12px;
+		position: absolute;
+    	bottom: 0;
+    	width: 100%;
+    	z-index: 1;
+	}
+	.footer a{
+		color: #999999;
+		text-decoration: none;
+		padding-right: 12px;
+		padding-left: 12px;
+		border-right: 1px solid #999999;
+	}
 }
 @media screen and (min-width: 992px) and (max-width: 1199px){
 		body .container-fluid{
@@ -232,6 +261,7 @@
 		background-size: auto 100%;
 		background-attachment: fixed; 
 		background-repeat: no-repeat;
+		position: relative;
 	}
 	body{
 		padding: 0;
@@ -317,9 +347,9 @@
 		position: relative;
 	}
 	.main .text1{
-		font-size: 18px;
+		font-size: 21px;
 		line-height: 35px;
-		width: 60%;
+		width: 62%;
 		color: #595959;
 		margin-left: 50px;
 	}
@@ -380,15 +410,15 @@
 	}
 	.form{
 		background-color: rgba(250,214,137,0.9);
-		margin: 0 0 45px 0;
+		margin: 0 0 90px 0;
 		color: white;
 	}
 	.form h2{
-		padding-top: 120px;
+		padding-top: 85px;
 	}
 	.form h3{
 		line-height: 40px;
-		margin-bottom: 60px;
+		margin-bottom: 40px;
 	}
 	.form .col-md-4 .card2{
 		text-align: right;
@@ -409,8 +439,8 @@
 	}
 	.form .col-md-4 .card2 .form-info h3{
 		color: #FFB11B;
-		margin-top: 30px;
-		margin-bottom: 25px;
+		margin-top: 25px;
+		margin-bottom: 15px;
 	}
 	.form .col-md-4 .card2 .form-info form input[type="text"], .form .col-md-4 .card2 .form-info form input[type="email"]{
 		width: 200px;
@@ -434,6 +464,13 @@
 	.form .col-md-4 .card2 img{
 		width: 240px;
 	}
+	.safe{
+		width: 200px; 
+		text-align:left; 
+		margin-left:22px; 
+		font-size:10px; 
+		color: #CFCFCF;
+	}
 	.button1{
 		background-color: #FFB11B;
 		color: white;
@@ -454,6 +491,23 @@
 		margin-top: 26px;
 		margin-bottom: -1px;
 	}   
+	.footer{
+		background-color:#F3F3F3; 
+		height:40px;
+		text-align: center;
+		padding: 20px 0 35px 0;
+		font-size: 12px;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+	.footer a{
+		color: #999999;
+		text-decoration: none;
+		padding-right: 12px;
+		padding-left: 12px;
+		border-right: 1px solid #999999;
+	}
 }
 @media screen and (max-width: 991px) {
 	.col-xs-12{
@@ -468,7 +522,7 @@
 	}
 	body .container-fluid{
 		margin: 0;
-		
+		position: relative;
 		text-align: center;
 	}
 	#logo{
@@ -594,7 +648,7 @@
 		font-size: 18px;
 		margin-top: 15px;
 		line-height: 30px;
-		margin-bottom: 55px;
+		margin-bottom: 35px;
 	}
 	.card2 img{
 		display: none;
@@ -623,6 +677,7 @@
 		color: #999999;
 		font-size: 16px;
 		padding-top: 45px;
+		margin-bottom: 50px;
 	}
 	.card2 .form-info input[type="radio"]{
 		height: 30px;
@@ -630,6 +685,17 @@
 		vertical-align: middle;
 		margin-top: -4px;
 		margin-left: -35px;
+	}
+	.safe{
+		width: 260px; 
+		text-align:left; 
+		margin-left:24px; 
+		font-size:12px; 
+		color: #CFCFCF;
+	}
+	.form .ask{
+		/*padding-bottom: 15px;*/
+		color: #595959;
 	}
 	.button1{
 		background-color: #FFB11B;
@@ -654,4 +720,21 @@
 		margin-top: 26px;
 		margin-bottom: 64px;
 	}  
+	.footer{
+		background-color:#F3F3F3; 
+		height:40px;
+		text-align: center;
+		padding: 20px 0 35px 0;
+		font-size: 12px;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+	.footer a{
+		color: #999999;
+		text-decoration: none;
+		padding-right: 12px;
+		padding-left: 12px;
+		border-right: 1px solid #999999;
+	}
 }

@@ -3,7 +3,7 @@ html,body {
 }
 @media screen and (min-width: 992px) {
 	.main{
-		margin-top: 200px;
+		margin-top: 120px;
 		height: 516px;
 		background-color: rgba(255,255,255,0.9);
 		padding: 70px 10px 0 10px;
@@ -29,6 +29,14 @@ html,body {
 		position: relative;
 		margin-top: 40%;
 	}
+	#bubble4{
+		position: absolute;
+		top: 142px;
+		right: 290px;
+	}
+	#bubble4 img{
+		height: 41px;
+	}
 }
 @media screen and (max-width: 991px) {
 	.main .row{
@@ -41,4 +49,17 @@ html,body {
 		line-height: 35px;
 		color: #595959;
 	}
+}
+th{
+	padding: 0px 10px;
+	border: 1px solid #898989;
+	background-color: #DDD;
+	line-height: 2.85714rem;
+	height: 40px;
+}
+td{
+	padding: 0px 10px;
+	border: 1px solid #898989;
+	line-height: 2.85714rem;
+	height: 40px;
 }
