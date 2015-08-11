@@ -650,7 +650,7 @@
 		font-size: 18px;
 		margin-top: 15px;
 		line-height: 30px;
-		margin-bottom: 35px;
+		/*margin-bottom: 35px;*/
 	}
 	.card2 img{
 		display: none;
@@ -679,7 +679,8 @@
 		color: #999999;
 		font-size: 16px;
 		padding-top: 45px;
-		margin-bottom: 50px;
+		margin-bottom: 20px;
+		height: 452px;
 	}
 	.card2 .form-info input[type="radio"]{
 		height: 30px;
