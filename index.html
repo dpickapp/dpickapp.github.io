@@ -29,54 +29,6 @@
     </noscript>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script>
-        $(function(){
-          $('#scroll').click(function(){ 
-            $('html,body').animate({scrollTop:'800px'}, 600);
-            return false;
-          }); 
-        });
-        $(function(){
-          $('#call').click(function(){ 
-            $('html,body').animate({scrollTop:$('#form').offset().top}, 600);
-
-            if(window.navigator.userAgent.indexOf('Mobile') < 1){
-              $("input[type='text']:first", document.forms[0]).focus();
-            }
-            return false;
-          }); 
-        });
-        $(function(){
-          $('#call1').click(function(){ 
-            $('html,body').animate({scrollTop:$('#form').offset().top}, 600);
-            $("input[type='text']:first", document.forms[0]).focus();
-            return false;
-          }); 
-        });
-    </script>
-    <script>
-      function check_form(){
-          var uni = document.forms["Dpickform"]["entry.1820597178"].value;
-          var dep = document.forms["Dpickform"]["entry.1846109301"].value;
-          var mail = document.forms["Dpickform"]["entry.34462943"].value;
-          var sex = document.forms["Dpickform"]["entry.1523064061"].value;
-          if (uni == null || uni == "") {
-              alert("大学名を正しく入力してください。");
-              return false;
-          }
-          if (dep == null || dep == ""){
-              alert("学部を正しく入力してください。");
-              return false;
-          }
-          if (mail == null || mail == ""){
-              alert("メールアドレスを正しく入力してください。");
-              return false;
-          }
-          else{
-            return true;
-          }
-      }
-    </script>
     <!-- Google analytics -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -87,6 +39,56 @@
       ga('create', 'UA-66148439-1', 'auto');
       ga('send', 'pageview');
     </script>
+    <script>
+        $(function(){
+          $('#scroll').click(function(){
+            ga('send', 'event', 'click', 'sroll');
+            $('html,body').animate({scrollTop:'800px'}, 600);
+            return false;
+          });
+          $('#call').click(function(){
+            ga('send', 'event', 'click', 'call');
+            $('html,body').animate({scrollTop:$('#form').offset().top}, 600);
+
+            if(window.navigator.userAgent.indexOf('Mobile') < 1){
+              $("input[type='text']:first", document.forms[0]).focus();
+            }
+            return false;
+          });
+          $('#call1').click(function(){
+            ga('send', 'event', 'click', 'sroll1');
+            $('html,body').animate({scrollTop:$('#form').offset().top}, 600);
+            $("input[type='text']:first", document.forms[0]).focus();
+            return false;
+          });
+        });
+    </script>
+    <script>
+      function check_form(){
+          var uni = document.forms["Dpickform"]["entry.1820597178"].value;
+          var dep = document.forms["Dpickform"]["entry.1846109301"].value;
+          var mail = document.forms["Dpickform"]["entry.34462943"].value;
+          var sex = document.forms["Dpickform"]["entry.1523064061"].value;
+          if (uni == null || uni == "") {
+              ga('send', 'event', 'invalid', 'uni');
+              alert("大学名を正しく入力してください。");
+              return false;
+          }
+          if (dep == null || dep == ""){
+              ga('send', 'event', 'invalid', 'dep');
+              alert("学部を正しく入力してください。");
+              return false;
+          }
+          if (mail == null || mail == ""){
+              ga('send', 'event', 'invalid', 'mail');
+              alert("メールアドレスを正しく入力してください。");
+              return false;
+          }
+          else{
+            return true;
+          }
+      }
+    </script>
   </head>
   <body>
       <div class="container-fluid">
@@ -94,7 +96,7 @@
         	<div class="col-lg-2 col-md-1">
         	</div>
         	<div class="col-lg-8 col-md-10 col-xs-12 col-sm-12">
-            
+
           		<div id="logo">
                 <img src="assets/img/dpick.png" />
               </div>
@@ -169,8 +171,8 @@
                       <div class="safe">
                         <small>メールアドレスは運営側からの連絡用です。一般には絶対に公開されません。ご安心ください。</small>
                       </div>
-                      
-                      <div class="radio"> 
+
+                      <div class="radio">
                         <label style="margin-right: 25px;"><input type="radio" name="entry.1523064061" value="0" checked required oninvalid="this.setCustomValidity('せいべつを正しく入力してください。')" oninput="setCustomValidity('')" > 男性</label>
                         <label><input type="radio" name="entry.1523064061" value="1"> 女性</label>
                       </div>
