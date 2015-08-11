@@ -25,15 +25,18 @@
         $(function(){
           $('#call').click(function(){ 
             $('html,body').animate({scrollTop:'2000px'}, 600);
+            $("input[type='text']:first", document.forms[0]).focus();
             return false;
           }); 
         });
         $(function(){
           $('#call1').click(function(){ 
             $('html,body').animate({scrollTop:'2000px'}, 600);
+            $("input[type='text']:first", document.forms[0]).focus();
             return false;
           }); 
         });
+
     </script>
     <script>
       function check_form(){
@@ -144,7 +147,7 @@
                     </script>
                     <h3>Wcard</h3>
                     <form id="formID" name="Dpickform"  method="post" action="https://docs.google.com/forms/d/1RniOByj6TO_wJmQ1sJEg31kJzTQSaY5dYjyh7gsJfTY/formResponse" target="hidden_iframe" onsubmit="return check_form()">
-                      <input type="text" name="entry.1820597178" placeholder="学校：早稲田大学" required oninvalid="this.setCustomValidity('大学名を正しく入力してください。')" oninput="setCustomValidity('')" ></br>
+                      <input type="text" name="entry.1820597178" placeholder="学校：早稲田大学" required oninvalid="this.setCustomValidity('大学名を正しく入力してください。')" oninput="setCustomValidity('')"></br>
                       <input type="text" name="entry.1846109301" placeholder="学部：ex 基幹理工学部" required oninvalid="this.setCustomValidity('学部を正しく入力してください。')" oninput="setCustomValidity('')" ></br>
                       <input type="email" name="entry.34462943" placeholder="メールアドレス" required oninvalid="this.setCustomValidity('大学メールを正しく入力してください。')" oninput="setCustomValidity('')" ></br>
                       <div class="safe">
