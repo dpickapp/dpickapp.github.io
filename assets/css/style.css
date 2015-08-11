@@ -525,7 +525,7 @@
 	body{
 		padding: 0;
 		background-image: url('../img/bac_s1.png');
-		background-size: 125% auto;
+		background-size: 120% auto;
 		/*background-attachment: fixed; */
 		background-repeat: no-repeat;
 	}
@@ -535,17 +535,15 @@
 		text-align: center;
 	}
 	#logo{
-		margin-top: 70px;
-		margin-bottom: 25px;
+		margin-top: 20px;
 	}
     #logo img{
-		height:38px;
+		height:20px;
 	}    
 	.slogan{
-		font-size: 24px;
-		margin-left: 45px;
-		margin-right: 45px;
-		line-height: 38px;
+		font-size: 14px;
+		margin-left: 15px;
+		margin-right: 15px;
 	}
 	.main{
 		text-align: center;
@@ -561,13 +559,13 @@
 		color: white;
 		font-size: 18px;
 		padding: 15px;
-		width: 90%;
+		width: 85%;
 		box-shadow: 0px 4px 0px #DD9915;
 		border: 0px;
 		border-radius: 4px;
 		background-image: none;
 		text-shadow: none;
-		margin-top: 25px
+		margin-top: 15px
 	}
 	.button:hover, .button:active, .button:focus, .button:active:focus{
 		background-color: #FFC408;
@@ -575,24 +573,25 @@
 		text-shadow: none;
 		box-shadow: 0px 2px 0px #DD9915;
 		outline: none;
-		margin-top: 27px;
+		margin-top: 17px;
 		margin-bottom: -2px;
 	}
-	#card1{
-		margin-top: 50px;
-		margin-bottom: 30px;
+	#m_card1{
+		margin-top: 20px;
+		margin-bottom: 15px;
 	}
-	#card1 img{
-		width: 300px;
+	#m_card1 img{
+		width: 150px;
 	}
 	.text1{
 		font-size: 16px;
 		line-height: 30px;
-		color: white;
+		color: #595959;
 		margin-bottom: 30px;
 		width: 90%;
 		margin-left: auto;
 		margin-right: auto;
+		margin-top: 30px;
 	}
 	.page2{
 		background-color: white;
@@ -672,7 +671,9 @@
 		background-size: 100%;
 	}
 	.card2 .form-info h3{
-		display: none;
+		color: #FFB11B;
+		margin-top: 25px;
+		margin-bottom: 15px;
 	}
 	.card2 .form-info form input[type="text"], .card2 .form-info form input[type="email"]{
 		width: 260px;
@@ -685,7 +686,7 @@
 	.card2 .form-info form{
 		color: #999999;
 		font-size: 16px;
-		padding-top: 45px;
+		padding-top: 5px;
 		margin-bottom: 10px;
 		height: 454px;
 	}
@@ -699,7 +700,7 @@
 	.safe{
 		width: 260px; 
 		text-align:left; 
-		margin-left:24px; 
+		margin-left:18px; 
 		font-size:12px; 
 		color: #CFCFCF;
 	}
@@ -719,7 +720,7 @@
 		background-image: none;
 		text-shadow: none;
 		margin-top: 25px;
-		margin-bottom: 65px;
+		margin-bottom: 25px;
 		width: 260px;
 	}
 	.button1:hover, .button1:active, .button1:focus, .button1:active:focus{

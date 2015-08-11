@@ -94,20 +94,23 @@
         	<div class="col-lg-2 col-md-1">
         	</div>
         	<div class="col-lg-8 col-md-10 col-xs-12 col-sm-12">
-            
+                          <div id="m_card1" class="visible-xs visible-sm">
+                  <img src="assets/img/head.png" />
+              </div>
           		<div id="logo">
                 <img src="assets/img/dpick.png" />
               </div>
+
               <h2 class="slogan">大隈さんが変える、あなたのワセダライフ</h2>
                 <a href="#form" id="call"><button type="button" class="btn btn-default button">ここから始まります  <i class="fa fa-angle-down fa-lg"></i></button></a>
               <div id="scroll" class="hidden-xs hidden-sm">
                 <a href="#page2"><img src="assets/img/scroll-down.png" /></a>
               </div>
               <div class="main">
-                  <div id="card1">
+                  <div id="card1" class="hidden-xs hidden-sm">
                     <img src="assets/img/card1.png" />
                   </div>
-                  <p class="text1"><b>Dpickとは？</b></br>仲のいいサークル仲間、就活中の友人。その人たちは５万人いる早大生の数％です。卒業するまで気づけない、本当は面白い早大生に会えるかもしれない、Dpickはそんな早稲田生のための、無料交流コーディネートサービスです。</p>
+                  <p class="text1">仲のいいサークル仲間、就活中の友人。その人たちは５万人いる早大生の数％です。卒業するまで気づけない、本当は面白い早大生に会えるかもしれない、Dpickはそんな早稲田生のための、無料交流コーディネートサービスです。</br><p class="text1 visible-xs visible-sm">また、今後本サービスは慶應大学、東京大学などの他大学の Dpick と連携しサービスを開始する予定です。</p>
                   <div id="bubble1" class="hidden-xs hidden-sm">
                     <img src="assets/img/bubble1.png" />
                   </div>
@@ -161,8 +164,9 @@
                         }
                       }
                     </script>
-                    <h3>Wcard</h3>
+                    <h3 class="hidden-xs hidden-sm">Wcard</h3>
                     <form id="formID" name="Dpickform"  method="post" action="https://docs.google.com/forms/d/1RniOByj6TO_wJmQ1sJEg31kJzTQSaY5dYjyh7gsJfTY/formResponse" target="hidden_iframe" onsubmit="return check_form()">
+                      <h3 class="visible-xs visible-sm">Wcard</h3>
                       <input type="text" name="entry.1820597178" placeholder="学校：早稲田大学" required oninvalid="this.setCustomValidity('大学名を正しく入力してください。')" oninput="setCustomValidity('')"></br>
                       <input type="text" name="entry.1846109301" placeholder="学部：ex 基幹理工学部" required oninvalid="this.setCustomValidity('学部を正しく入力してください。')" oninput="setCustomValidity('')" ></br>
                       <input type="email" name="entry.34462943" placeholder="メールアドレス" required oninvalid="this.setCustomValidity('大学メールを正しく入力してください。')" oninput="setCustomValidity('')" ></br>
@@ -180,8 +184,6 @@
                     </form>
                     <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="iframe_load()"></iframe>
                   </div>
-                  <!-- <img src="assets/img/card2.png"> -->
-                  <small class="visible-xs visible-sm"><li>また、今後本サービスは慶應大学、東京大学などの他大学の Dpick と連携しサービスを開始する予定です。</li></small></br>
                   <small class="visible-xs visible-sm" style="margin-bottom: 60px;"><li>あなたの個人情報は「個人情報保護に関する法律」に基づきお客様の同意なく当サービスの向上以外の目的で使用されることはありません。</li></small></br>
                 </div>
               </div>
