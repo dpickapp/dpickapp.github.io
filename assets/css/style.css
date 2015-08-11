@@ -156,6 +156,7 @@
 		background-color: rgba(251,201,94,0.9);
 		margin: 0 0 90px 0;
 		color: white;
+		    height: 580px;
 	}
 	.form h2{
 		padding-top: 100px;
@@ -172,14 +173,16 @@
 		margin-bottom: 100px;
 	}
 	.form .col-md-4 .card2 .form-info{
-		height: 381px;
+		height: 376px;
 		width: 240px;
 		position: absolute;
 		top:0;
 		right:0;
 		text-align: center;
 		z-index: 1;
-		
+		background-image: url('../img/card2.png');
+		background-size: 100%;
+		margin-bottom: 100px;
 	}
 	.form .col-md-4 .card2 .form-info h3{
 		color: #FFB11B;
@@ -413,6 +416,7 @@
 		background-color: rgba(251,201,94,0.9);;
 		margin: 0 0 90px 0;
 		color: white;
+		height: 580px;
 	}
 	.form h2{
 		padding-top: 85px;
@@ -429,15 +433,18 @@
 		margin-bottom: 100px;
 	}
 	.form .col-md-4 .card2 .form-info{
-		height: 381px;
+		height: 376px;
 		width: 240px;
 		position: absolute;
 		top:0;
 		right:0;
 		text-align: center;
 		z-index: 1;
-		
+		background-image: url('../img/card2.png');
+		background-size: 100%;
+		margin-bottom: 100px;
 	}
+
 	.form .col-md-4 .card2 .form-info h3{
 		color: #FFB11B;
 		margin-top: 25px;
