@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <title>Dpick 早稲田</title>
+    <title>Dpick</title>
     <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="assets/img/thumbnail.png" property="og:image"></meta>
-    <meta content="Dpick 早稲田" property="og:title"></meta>
+    <meta content="Dpick" property="og:title"></meta>
     <meta content="5万人の早稲田生のための、早稲田生だけの無料友だち交流コーディネートサービス #Dpick が誕生＼(^o^)／ 早稲田生は見てみなきゃ！" property="og:description"></meta>
     <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"/>
     <!-- Bootstrap -->
@@ -42,8 +42,8 @@
     <script>
         $(function(){
           $('#scroll').click(function(){
-            ga('send', 'event', 'click', 'sroll');
-            $('html,body').animate({scrollTop:'800px'}, 600);
+            ga('send', 'event', 'click', 'scroll');
+            $('html,body').animate({scrollTop:$('#page2').offset().top}, 600);
             return false;
           });
           $('#call').click(function(){
@@ -92,7 +92,7 @@
   </head>
   <body>
       <div class="container-fluid">
-        <div class="row">
+        <div class="row" style="position:relative;">
         	<div class="col-lg-2 col-md-1">
         	</div>
         	<div class="col-lg-8 col-md-10 col-xs-12 col-sm-12">
@@ -100,26 +100,91 @@
                   <img src="assets/img/head.png" />
           </div>
           		<div id="logo">
-                <img src="assets/img/dpick.png" />
+                <img src="assets/img/dpick.png" />   
+                <img class="hidden-sm hidden-xs" src="assets/img/head.png" />   
               </div>
 
-              <h2 class="slogan">大隈さんが変える、あなたのワセダライフ</h2>
-                <a href="#form" id="call"><button type="button" class="btn btn-default button">ここから始まります  <i class="fa fa-angle-down fa-lg"></i></button></a>
-              <div id="scroll" class="hidden-xs hidden-sm">
-                <a href="#page2"><img src="assets/img/scroll-down.png" /></a>
-              </div>
-              <div class="main">
-                  <div id="card1" class="hidden-xs hidden-sm">
-                    <img src="assets/img/card1.png" />
+              <h2 class="slogan">仲のいいサークル仲間、就活中の友人。その人たちは５万人いる早大生の数％です。毎晩午前０時、期間は２４時間のカード一つだけを開封して、東大早大慶応の大学生と友達になれるの無料交流。</h2>
+                <div id="scroll" class="hidden-xs hidden-sm"><button type="button" class="btn btn-default button">Dpickとは？  <i class="fa fa-angle-down fa-lg"></i></button></div>
+                <div id="call" class="visible-xs visible-sm"><button type="button" class="btn btn-default button-call">ここから始まります  <i class="fa fa-angle-down fa-lg"></i></button></div>
+                <div id="card1" class="hidden-xs hidden-sm card2">
+                  <div class="form-info">
+                    <script type="text/javascript">
+                      var i = 0;
+                      function iframe_load() {
+                        console.log('loaded!');
+                        i++;
+                        if(i > 1){
+                          document.location.href="finish.html";
+                        }
+                      }
+                    </script>
+                    <h3 class="hidden-xs hidden-sm">Wcard <span class="label label-danger hidden-sm hidden-xs">大人気</span></h3>
+                    <form id="formID" name="Dpickform"  method="post" action="https://docs.google.com/forms/d/1RniOByj6TO_wJmQ1sJEg31kJzTQSaY5dYjyh7gsJfTY/formResponse" target="hidden_iframe" onsubmit="return check_form()">
+                      <h3 class="visible-xs visible-sm">Wcard</h3>
+                      <input type="text" name="entry.1820597178" placeholder="学校：早稲田大学" required oninvalid="this.setCustomValidity('大学名を正しく入力してください。')" oninput="setCustomValidity('')" autofocus></br>
+                      <input type="text" name="entry.1846109301" placeholder="学部：ex 基幹理工学部" required oninvalid="this.setCustomValidity('学部を正しく入力してください。')" oninput="setCustomValidity('')" ></br>
+                      <input type="email" name="entry.34462943" placeholder="メールアドレス" required oninvalid="this.setCustomValidity('大学メールを正しく入力してください。')" oninput="setCustomValidity('')" ></br>
+                      <div class="safe">
+                        <small>メールアドレスは運営側からの連絡用です。一般には絶対に公開されません。ご安心ください。</small>
+                      </div>
+                      <div class="radio">
+                        <label style="margin-right: 25px;"><input type="radio" name="entry.1523064061" value="0" checked required oninvalid="this.setCustomValidity('せいべつを正しく入力してください。')" oninput="setCustomValidity('')" > 男性</label>
+                        <label><input type="radio" name="entry.1523064061" value="1"> 女性</label>
+                      </div>
+                      <input type="hidden" name="pageHistory" value="0">
+                      <input type="hidden" name="fvv" value="0">
+                      <button type="submit" class="button1 btn btn-default">大隈さんへ送信する</button>
+                    </form>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="iframe_load()"></iframe>
                   </div>
-                  <p class="text1">仲のいいサークル仲間、就活中の友人。その人たちは５万人いる早大生の数％です。卒業するまで気づけない、本当は面白い早大生に会えるかもしれない、Dpickはそんな早稲田生のための、無料交流コーディネートサービスです。</br>また、今後本サービスは<b>慶応大学</b>、<b>東京大学</b>などの他大学の Dpick と連携しサービスを開始する予定です。</p>
-                  <div id="bubble1" class="hidden-xs hidden-sm">
+                </div>
+<!--               <div id="scroll" class="hidden-xs hidden-sm">
+                <a href="#page2"><img src="assets/img/scroll-w.png" /></a>
+              </div> -->
+              <div class="main">
+<!--                   <div id="card1" class="hidden-xs hidden-sm">
+                    <img src="assets/img/card1.png" />
+                  </div> -->
+<!--                 <div id="card1" class="hidden-xs hidden-sm card2">
+                  <div class="form-info">
+                    <script type="text/javascript">
+                      var i = 0;
+                      function iframe_load() {
+                        console.log('loaded!');
+                        i++;
+                        if(i > 1){
+                          document.location.href="finish.html";
+                        }
+                      }
+                    </script>
+                    <h3 class="hidden-xs hidden-sm">Wcard <span class="label label-danger hidden-sm hidden-xs">大人気</span></h3>
+                    <form id="formID" name="Dpickform"  method="post" action="https://docs.google.com/forms/d/1RniOByj6TO_wJmQ1sJEg31kJzTQSaY5dYjyh7gsJfTY/formResponse" target="hidden_iframe" onsubmit="return check_form()">
+                      <h3 class="visible-xs visible-sm">Wcard</h3>
+                      <input type="text" name="entry.1820597178" placeholder="学校：早稲田大学" required oninvalid="this.setCustomValidity('大学名を正しく入力してください。')" oninput="setCustomValidity('')" autofocus></br>
+                      <input type="text" name="entry.1846109301" placeholder="学部：ex 基幹理工学部" required oninvalid="this.setCustomValidity('学部を正しく入力してください。')" oninput="setCustomValidity('')" ></br>
+                      <input type="email" name="entry.34462943" placeholder="メールアドレス" required oninvalid="this.setCustomValidity('大学メールを正しく入力してください。')" oninput="setCustomValidity('')" ></br>
+                      <div class="safe">
+                        <small>メールアドレスは運営側からの連絡用です。一般には絶対に公開されません。ご安心ください。</small>
+                      </div>
+                      <div class="radio">
+                        <label style="margin-right: 25px;"><input type="radio" name="entry.1523064061" value="0" checked required oninvalid="this.setCustomValidity('せいべつを正しく入力してください。')" oninput="setCustomValidity('')" > 男性</label>
+                        <label><input type="radio" name="entry.1523064061" value="1"> 女性</label>
+                      </div>
+                      <input type="hidden" name="pageHistory" value="0">
+                      <input type="hidden" name="fvv" value="0">
+                      <button type="submit" class="button1 btn btn-default">大隈さんへ送信する</button>
+                    </form>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="iframe_load()"></iframe>
+                  </div>
+                </div> -->
+<!--                   <p class="text1">仲のいいサークル仲間、就活中の友人。その人たちは５万人いる早大生の数％です。卒業するまで気づけない、本当は面白い早大生に会えるかもしれない、Dpickはそんな早稲田生のための、無料交流コーディネートサービスです。</br>また、今後本サービスは<b>慶応大学</b>、<b>東京大学</b>などの他大学の Dpick と連携しサービスを開始する予定です。</p> -->
+<!--                   <div id="bubble1" class="hidden-xs hidden-sm">
                     <img src="assets/img/bubble1.png" />
                   </div>
                   <div id="bubble2" class="hidden-xs hidden-sm">
                     <img src="assets/img/bubble2.png" />
-                  </div>
-
+                  </div> -->
                   <div class="page2" id="page2">
                     <h1>仕組み</h1>
                     <p class="text2">あなたは毎晩 Wcard と呼ばれる紹介状を受け取ります。 そこでは大隈さんがあなたの為に選んだ早稲田生を1人紹介します。</p>
@@ -167,16 +232,15 @@
                         }
                       }
                     </script>
-                    <h3 class="hidden-xs hidden-sm">Wcard</h3>
+                    <h3 class="hidden-xs hidden-sm">Wcard <span class="label label-danger hidden-sm hidden-xs" style="top:34px;">大人気</span></h3>
                     <form id="formID" name="Dpickform"  method="post" action="https://docs.google.com/forms/d/1RniOByj6TO_wJmQ1sJEg31kJzTQSaY5dYjyh7gsJfTY/formResponse" target="hidden_iframe" onsubmit="return check_form()">
-                      <h3 class="visible-xs visible-sm">Wcard</h3>
+                      <h3 class="visible-xs visible-sm">Wcard  <span class="label label-danger" style="top:34px;">大人気</span></h3>
                       <input type="text" name="entry.1820597178" placeholder="学校：早稲田大学" required oninvalid="this.setCustomValidity('大学名を正しく入力してください。')" oninput="setCustomValidity('')"></br>
                       <input type="text" name="entry.1846109301" placeholder="学部：ex 基幹理工学部" required oninvalid="this.setCustomValidity('学部を正しく入力してください。')" oninput="setCustomValidity('')" ></br>
                       <input type="email" name="entry.34462943" placeholder="メールアドレス" required oninvalid="this.setCustomValidity('大学メールを正しく入力してください。')" oninput="setCustomValidity('')" ></br>
                       <div class="safe">
                         <small>メールアドレスは運営側からの連絡用です。一般には絶対に公開されません。ご安心ください。</small>
                       </div>
-
                       <div class="radio">
                         <label style="margin-right: 25px;"><input type="radio" name="entry.1523064061" value="0" checked required oninvalid="this.setCustomValidity('せいべつを正しく入力してください。')" oninput="setCustomValidity('')" > 男性</label>
                         <label><input type="radio" name="entry.1523064061" value="1"> 女性</label>

@@ -14,17 +14,19 @@
 		padding: 0;
 	}
 	#logo{
-		margin-top: 12%;
-		margin-bottom: 25px;
+		margin-top: 22%;
+		margin-bottom: 40px;
 	}
 	#logo img{
 		height:72px;
 	}
 	.slogan{
 		color: #444444;
-		font-size: 32px;
+		font-size: 20px;
+		width: 65%;
+		line-height: 40px;
 	}
-	.button{
+/*	.button-call{
 		background-color: #FFB11B;
 		color: white;
 		font-size: 24px;
@@ -36,7 +38,7 @@
 		text-shadow: none;
 		margin-top: 25px;
 	}
-	.button:hover, .button:active:focus, .button:focus, .button:active{
+	.button-call:hover, .button-call:active:focus, .button-call:focus, .button-call:active{
 		background-color: #FFC408;
 		color:white;
 		text-shadow: none;
@@ -45,6 +47,33 @@
 		box-shadow: 0px 2px 0px #DD9915;
 		margin-top: 27px;
 		margin-bottom: -2px;
+	}*/
+	.button{
+		background-color: transparent;
+		color: white;
+		font-size: 14px;
+		padding: 10px 30px;
+		border: 2px solid white;
+		border-radius: 4px;
+		background-image: none;
+		text-shadow: none;
+		margin-top: 20px;
+	}
+	.button:hover, .button:active:focus, .button:focus, .button:active{
+		opacity: 0.7;
+		background-color: transparent;
+		color: white;
+		border: 2px solid white;
+		outline: none;
+		box-shadow: none;
+	}
+	h3 .label{
+		position: absolute;
+	    padding: 5px;
+	    top: 27px;
+	    right: 20px;
+	    margin-left:10px; 
+	    font-size:12px; 
 	}
 	.button2{
 		background-color: transparent;
@@ -66,16 +95,16 @@
 		box-shadow: none;
 	}
 	#card1{
+		top: 90px;
 		position: absolute;
-		right: -5px;
-		top: -125px;
+		right:10px;
 	}
 	#card1 img{
 		width: 240px;
 	}
 	#bubble1{
 		position: absolute;
-		top: -228px;
+		top: -453px;
 		right: -100px;
 	}
 	#bubble1 img{
@@ -84,15 +113,15 @@
 	#bubble2{
 		position: absolute;
 		right: 250px;
-		top: -35px;
+		top: -255px;
 	}
 	#bubble2 img{
 		height: 65px;
 	}
 	#scroll{
-		position: absolute;
+/*		position: absolute;
 		top: 680px;
-		left: 48%;
+		left: 48%;*/
 		z-index: 1;
 	}
 	#scroll:hover img{
@@ -103,9 +132,9 @@
 		width: 55px;
 	}
 	.main{
-		margin-top: 40px;
+		margin-top: 20%;
 		background-color: rgba(255,255,255,0.9);
-		padding: 40px 10px 0 10px;
+		padding: 0px 10px 0 10px;
 		position: relative;
 	}
 	.main .text1{
@@ -116,8 +145,8 @@
 		margin-left: 50px;
 	}
 	.page2{
-		margin-top: 150px;
-		padding-top: 60px;
+		/*margin-top: 150px;*/
+		padding-top: 50px;
 		text-align: center;
 		height: 100%;
 		color: #595959;
@@ -156,7 +185,7 @@
 		background-color: rgba(251,201,94,0.9);
 		margin: 0 0 90px 0;
 		color: white;
-		    height: 580px;
+		height: 580px;
 	}
 	.form h2{
 		padding-top: 100px;
@@ -165,14 +194,14 @@
 		line-height: 40px;
 		margin-bottom: 20px;
 	}
-	.form .col-md-4 .card2{
+	.card2{
 		text-align: right;
 		margin-top: 100px;
 		position: relative;
 		z-index: 10;
 		margin-bottom: 100px;
 	}
-	.form .col-md-4 .card2 .form-info{
+	.card2 .form-info{
 		height: 376px;
 		width: 240px;
 		position: absolute;
@@ -184,12 +213,12 @@
 		background-size: 100%;
 		margin-bottom: 100px;
 	}
-	.form .col-md-4 .card2 .form-info h3{
-		color: #FFB11B;
+	.card2 .form-info h3{
+		color: #595959;
 		margin-top: 25px;
 		margin-bottom: 15px;
 	}
-	.form .col-md-4 .card2 .form-info form input[type="text"], .form .col-md-4 .card2 .form-info form input[type="email"]{
+	.card2 .form-info form input[type="text"], .card2 .form-info form input[type="email"]{
 		width: 200px;
 		height: 35px;
 		border: 1px solid #DFDFDF;
@@ -197,11 +226,11 @@
 		margin-bottom: 8px;
 		padding-left: 5px;
 	}
-	.form .col-md-4 .card2 .form-info form{
+	.card2 .form-info form{
 		color: #999999;
 		font-size: 14px;
 	}
-	.form .col-md-4 .card2 .form-info input[type="radio"]{
+	.card2 .form-info input[type="radio"]{
 		height: 20px;
 		width: 20px;
 		margin-left: -25px;
@@ -209,7 +238,7 @@
 	.radio label input{
 		 margin-top:2px;
 	}
-	.form .col-md-4 .card2 img{
+	.card2 img{
 		width: 240px;
 	}
 	.safe{
@@ -280,42 +309,49 @@
 		padding: 0;
 	}
 	#logo{
-		margin-top: 12%;
-		margin-bottom: 25px;
+		margin-top: 19%;
+		margin-bottom: 40px;
 	}
 	#logo img{
 		height:72px;
 	}
 	.slogan{
 		color: #444444;
-		font-size: 32px;
+		font-size: 20px;
+		width: 65%;
+		line-height: 40px;
 	}
 	.button{
-		background-color: #FFB11B;
+		background-color: transparent;
 		color: white;
-		font-size: 24px;
-		padding: 15px 40px;
-		box-shadow: 0px 4px 0px #DD9915;
-		border: 0px;
+		font-size: 14px;
+		padding: 10px 30px;
+		border: 2px solid white;
 		border-radius: 4px;
 		background-image: none;
 		text-shadow: none;
-		margin-top: 25px;
+		margin-top: 20px;
 	}
 	.button:hover, .button:active:focus, .button:focus, .button:active{
-		background-color: #FFC408;
-		color:white;
-		text-shadow: none;
-		border: none;
+		opacity: 0.7;
+		background-color: transparent;
+		color: white;
+		border: 2px solid white;
 		outline: none;
-		box-shadow: 0px 2px 0px #DD9915;
-		margin-top: 27px;
-		margin-bottom: -2px;
+		box-shadow: none;
+	}
+	h3 .label{
+		position: absolute;
+	    padding: 5px;
+	    top: 27px;
+	    right: 20px;
+	    margin-left:10px; 
+	    font-size:12px; 
 	}
 	#card1{
+		top:160px;
 		position: absolute;
-		right: -5px;
-		top: -125px;
+		right:10px;
 	}
 	#card1 img{
 		width: 240px;
@@ -341,9 +377,9 @@
 		height: 65px;
 	}
 	#scroll{
-		position: absolute;
+/*		position: absolute;
 		top: 680px;
-		left: 48%;
+		left: 48%;*/
 		z-index: 1;
 	}
 	#scroll:hover img{
@@ -354,7 +390,7 @@
 		width: 55px;
 	}
 	.main{
-		margin-top: 40px;
+		margin-top: 17%;
 		background-color: rgba(255,255,255,0.9);
 		padding: 40px 10px 0 10px;
 		position: relative;
@@ -367,8 +403,8 @@
 		margin-left: 50px;
 	}
 	.page2{
-		margin-top: 150px;
-		padding-top: 80px;
+		/*margin-top: 150px;*/
+		padding-top: 20px;
 		text-align: center;
 		height: 100%;
 		color: #595959;
@@ -441,7 +477,7 @@
 		z-index: 10;
 		margin-bottom: 100px;
 	}
-	.form .col-md-4 .card2 .form-info{
+	.card2 .form-info{
 		height: 376px;
 		width: 240px;
 		position: absolute;
@@ -454,12 +490,12 @@
 		margin-bottom: 100px;
 	}
 
-	.form .col-md-4 .card2 .form-info h3{
+	.card2 .form-info h3{
 		color: #FFB11B;
 		margin-top: 25px;
 		margin-bottom: 15px;
 	}
-	.form .col-md-4 .card2 .form-info form input[type="text"], .form .col-md-4 .card2 .form-info form input[type="email"]{
+	.card2 .form-info form input[type="text"], .card2 .form-info form input[type="email"]{
 		width: 200px;
 		height: 35px;
 		border: 1px solid #DFDFDF;
@@ -467,18 +503,18 @@
 		margin-bottom: 8px;
 		padding-left: 5px;
 	}
-	.form .col-md-4 .card2 .form-info form{
+	.card2 .form-info form{
 		color: #999999;
 		font-size: 13px;
 	}
-	.form .col-md-4 .card2 .form-info input[type="radio"]{
+	.card2 .form-info input[type="radio"]{
 		height: 20px;
 		width: 20px;
 	}
 	.radio label input{
 		 margin-top:2px;
 	}
-	.form .col-md-4 .card2 img{
+	.card2 img{
 		width: 240px;
 	}
 	.safe{
@@ -553,15 +589,18 @@
 		text-align: center;
 	}
 	#logo{
-		margin-top: 20px;
+		margin-top: 10px;
 	}
     #logo img{
-		height:20px;
+		height:25px;
 	}    
 	.slogan{
-		font-size: 14px;
+		font-size: 16px;
 		margin-left: 15px;
-		margin-right: 15px;
+		margin-right: 15px;	
+		margin-top: 30px;
+		line-height: 30px;
+		color: #595959;
 	}
 	.main{
 		text-align: center;
@@ -572,7 +611,7 @@
 	#bubble2{
 		display: none;
 	}
-	.button{
+	.button-call{
 		background-color: #FFB11B;
 		color: white;
 		font-size: 18px;
@@ -583,17 +622,19 @@
 		border-radius: 4px;
 		background-image: none;
 		text-shadow: none;
-		margin-top: 15px
+		margin-top: 15px;
+		margin-bottom:40px;
 	}
-	.button:hover, .button:active, .button:focus, .button:active:focus{
+	.button-call:hover, .button-call:active, .button-call:focus, .button-call:active:focus{
 		background-color: #FFC408;
 		color:white;
 		text-shadow: none;
 		box-shadow: 0px 2px 0px #DD9915;
 		outline: none;
 		margin-top: 17px;
-		margin-bottom: -2px;
+		margin-bottom: 38px;
 	}
+
 	#m_card1{
 		margin-top: 20px;
 		margin-bottom: 15px;
@@ -692,6 +733,7 @@
 		color: #FFB11B;
 		margin-top: 25px;
 		margin-bottom: 15px;
+		padding-left: 55px;
 	}
 	.card2 .form-info form input[type="text"], .card2 .form-info form input[type="email"]{
 		width: 260px;
@@ -721,6 +763,11 @@
 		margin-left:18px; 
 		font-size:12px; 
 		color: #CFCFCF;
+	}
+	h3 .label{
+	    padding: 5px;
+	    margin-left:10px; 
+	    font-size:10px; 
 	}
 	.form .ask{
 		/*padding-bottom: 15px;*/
