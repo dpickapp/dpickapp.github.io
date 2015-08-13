@@ -70,10 +70,10 @@
 	h3 .label{
 		position: absolute;
 	    padding: 5px;
-	    top: 27px;
+	    top: 28px;
 	    right: 20px;
 	    margin-left:10px; 
-	    font-size:12px; 
+	    font-size:10px; 
 	}
 	.button2{
 		background-color: transparent;
@@ -343,10 +343,10 @@
 	h3 .label{
 		position: absolute;
 	    padding: 5px;
-	    top: 27px;
+	    top: 28px;
 	    right: 20px;
 	    margin-left:10px; 
-	    font-size:12px; 
+	    font-size:10px; 
 	}
 	#card1{
 		top:160px;
@@ -491,7 +491,7 @@
 	}
 
 	.card2 .form-info h3{
-		color: #FFB11B;
+		color: #595959;
 		margin-top: 25px;
 		margin-bottom: 15px;
 	}
@@ -730,10 +730,11 @@
 		background-size: 100%;
 	}
 	.card2 .form-info h3{
-		color: #FFB11B;
+		color: #595959;
 		margin-top: 25px;
 		margin-bottom: 15px;
 		padding-left: 55px;
+		font-size: 20px;
 	}
 	.card2 .form-info form input[type="text"], .card2 .form-info form input[type="email"]{
 		width: 260px;
