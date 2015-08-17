@@ -14,16 +14,16 @@
 		padding: 0;
 	}
 	#logo{
-		margin-top: 22%;
+		margin-top: 24%;
 		margin-bottom: 40px;
 	}
-	#logo img{
+	#logo img:first-child{
 		height:72px;
 	}
 	.slogan{
 		color: white;
 		font-size: 20px;
-		width: 65%;
+		width: 55%;
 		line-height: 40px;
 	}
 	.button{
@@ -45,13 +45,19 @@
 		outline: none;
 		box-shadow: none;
 	}
-	.label{
-	    padding: 15px 20px;
-	    font-size: 16px; 
-	    margin-left: 30px; 
-	    background-color:#FFF140;
-	    border-radius: 4px;
-	    color: #595959;
+	.count{
+		color: white;
+		font-size: 16px; 
+		z-index: 1;
+		margin-left:30px;
+		text-shadow: 0 0 15px #333, 0 0 15px #333, 0 0 0.15px #333;
+		letter-spacing:1px;
+	}
+	.count .number{
+		 font-size:21px; 
+		 color:#FFF140; 
+		 font-family:'Ubuntu Condensed', sans-serif; 
+		 letter-spacing:5px;
 	}
 	.button2{
 		background-color: transparent;
@@ -71,14 +77,6 @@
 		background-color: transparent;
 		outline: none;
 		box-shadow: none;
-	}
-	#card1{
-		top: 90px;
-		position: absolute;
-		right:10px;
-	}
-	#card1 img{
-		width: 240px;
 	}
 	#bubble1{
 		position: absolute;
@@ -163,7 +161,7 @@
 		background-color: rgba(141,172,211,0.9);
 		margin: 0 0 90px 0;
 		color: white;
-		height: 580px;
+		height: 620px;
 	}
 	.form h2{
 		padding-top: 100px;
@@ -172,16 +170,24 @@
 		line-height: 40px;
 		margin-bottom: 20px;
 	}
+	#card1{
+		top: 90px;
+		position: absolute;
+		right:10px;
+	}
+	#card1 img{
+		width: 240px;
+	}
 	.card2{
 		text-align: right;
-		margin-top: 80px;
+		margin-top: 60px;
 		position: relative;
 		z-index: 10;
 		margin-bottom: 100px;
 	}
 	.card2 .form-info{
-		height: 392px;
-		width: 250px;
+		height: 502px;
+		width: 320px;
 		position: absolute;
 		top:0;
 		right:0;
@@ -193,23 +199,23 @@
 	}
 	.card2 .form-info h3{
 		color: #8DACD3;
-		margin-top: 25px;
-		margin-bottom: 15px;
+		margin-top: 40px;
+		margin-bottom: 35px;
 		line-height: 40px;
 	}
 	.card2 .form-info form input[type="text"], .card2 .form-info form input[type="email"]{
-		width: 200px;
-		height: 35px;
+		width: 280px;
+		height: 40px;
 		border: 0px solid #DFDFDF;
 		border-radius: 2px;
-		margin-bottom: 8px;
-		padding-left: 5px;
+		margin-bottom: 10px;
+		padding-left: 8px;
 		background-color: white;
 	}
 	.card2 .form-info form{
 		/*color: #999999;*/
 		color: white;
-		font-size: 14px;
+		font-size: 16px;
 	}
 	.card2 .form-info input[type="radio"]{
 		height: 20px;
@@ -223,30 +229,31 @@
 		width: 240px;
 	}
 	.safe{
-		width: 200px; 
+		width: 280px; 
 		text-align:left; 
 		margin-left:22px; 
 		font-size:10px; 
 		color: #CFCFCF;
+		padding-bottom: 5px;
 	}
 	.button1{
 		background-color: #7F99CE;
 		color: white;
-		font-size: 14px;
-		padding: 10px 40px;
+		font-size: 16px;
+		padding: 10px 60px;
 		box-shadow: 0px 3px 0px #4D6BA1;
 		border: 0px;
 		border-radius: 4px;
 		background-image: none;
 		text-shadow: none;
-		margin-top: 20px;
+		margin-top: 30px;
 	}
 	.button1:hover, .button1:active, .button1:focus, .button1:active:focus{
 		background-color: #8DACD3;
 		color:white;
 		text-shadow: none;
 		box-shadow: 0px 2px 0px #4D6BA1;
-		margin-top: 21px;
+		margin-top: 31px;
 		margin-bottom: -1px;
 		outline: none;
 	}  
@@ -286,20 +293,20 @@
 		background-repeat: no-repeat;
 		position: relative;
 	}
-		body{
+	body{
 		padding: 0;
 	}
 	#logo{
-		margin-top: 22%;
+		margin-top: 24%;
 		margin-bottom: 40px;
 	}
-	#logo img{
+	#logo img:first-child{
 		height:72px;
 	}
 	.slogan{
 		color: white;
 		font-size: 20px;
-		width: 65%;
+		width: 55%;
 		line-height: 40px;
 	}
 	.button{
@@ -321,13 +328,19 @@
 		outline: none;
 		box-shadow: none;
 	}
-	.label{
-	    padding: 15px 20px;
-	    font-size: 16px; 
-	    margin-left: 30px; 
-	    background-color:#FFF140;
-	    border-radius: 4px;
-	    color: #595959;
+	.count{
+		color: white;
+		font-size: 16px; 
+		z-index: 1;
+		margin-left:30px;
+		text-shadow: 0 0 15px #333, 0 0 15px #333, 0 0 0.15px #333;
+		letter-spacing:1px;
+	}
+	.count .number{
+		 font-size:21px; 
+		 color:#FFF140; 
+		 font-family:'Ubuntu Condensed', sans-serif; 
+		 letter-spacing:5px;
 	}
 	.button2{
 		background-color: transparent;
@@ -347,14 +360,6 @@
 		background-color: transparent;
 		outline: none;
 		box-shadow: none;
-	}
-	#card1{
-		top: 90px;
-		position: absolute;
-		right:10px;
-	}
-	#card1 img{
-		width: 240px;
 	}
 	#bubble1{
 		position: absolute;
@@ -439,25 +444,33 @@
 		background-color: rgba(141,172,211,0.9);
 		margin: 0 0 90px 0;
 		color: white;
-		height: 580px;
+		height: 620px;
 	}
 	.form h2{
-		padding-top: 80px;
+		padding-top: 100px;
 	}
 	.form h3{
 		line-height: 40px;
 		margin-bottom: 20px;
 	}
+	#card1{
+		top: 90px;
+		position: absolute;
+		right:10px;
+	}
+	#card1 img{
+		width: 240px;
+	}
 	.card2{
 		text-align: right;
-		margin-top: 80px;
+		margin-top: 60px;
 		position: relative;
 		z-index: 10;
 		margin-bottom: 100px;
 	}
 	.card2 .form-info{
-		height: 392px;
-		width: 250px;
+		height: 502px;
+		width: 320px;
 		position: absolute;
 		top:0;
 		right:0;
@@ -469,23 +482,23 @@
 	}
 	.card2 .form-info h3{
 		color: #8DACD3;
-		margin-top: 25px;
-		margin-bottom: 15px;
+		margin-top: 40px;
+		margin-bottom: 35px;
 		line-height: 40px;
 	}
 	.card2 .form-info form input[type="text"], .card2 .form-info form input[type="email"]{
-		width: 200px;
-		height: 35px;
+		width: 280px;
+		height: 40px;
 		border: 0px solid #DFDFDF;
 		border-radius: 2px;
-		margin-bottom: 8px;
-		padding-left: 5px;
+		margin-bottom: 10px;
+		padding-left: 8px;
 		background-color: white;
 	}
 	.card2 .form-info form{
 		/*color: #999999;*/
 		color: white;
-		font-size: 14px;
+		font-size: 16px;
 	}
 	.card2 .form-info input[type="radio"]{
 		height: 20px;
@@ -499,30 +512,31 @@
 		width: 240px;
 	}
 	.safe{
-		width: 200px; 
+		width: 280px; 
 		text-align:left; 
 		margin-left:22px; 
 		font-size:10px; 
 		color: #CFCFCF;
+		padding-bottom: 5px;
 	}
 	.button1{
 		background-color: #7F99CE;
 		color: white;
-		font-size: 14px;
-		padding: 10px 40px;
+		font-size: 16px;
+		padding: 10px 60px;
 		box-shadow: 0px 3px 0px #4D6BA1;
 		border: 0px;
 		border-radius: 4px;
 		background-image: none;
 		text-shadow: none;
-		margin-top: 20px;
+		margin-top: 30px;
 	}
 	.button1:hover, .button1:active, .button1:focus, .button1:active:focus{
 		background-color: #8DACD3;
 		color:white;
 		text-shadow: none;
 		box-shadow: 0px 2px 0px #4D6BA1;
-		margin-top: 21px;
+		margin-top: 31px;
 		margin-bottom: -1px;
 		outline: none;
 	}  
@@ -553,6 +567,7 @@
 		background-color: #efefef;
 		color: #999999;
 	}
+
 }
 @media screen and (max-width: 991px) {
 	.col-xs-12{
@@ -605,7 +620,7 @@
 		background-image: none;
 		text-shadow: none;
 		margin-top: 15px;
-		margin-bottom:40px;
+		margin-bottom:20px;
 	}
 	.button-call:hover, .button-call:active, .button-call:focus, .button-call:active:focus{
 		background-color: #8DACD3;
@@ -614,7 +629,7 @@
 		box-shadow: 0px 2px 0px #4D6BA1;
 		outline: none;
 		margin-top: 17px;
-		margin-bottom: 38px;
+		margin-bottom: 18px;
 	}
 
 	#m_card1{
@@ -748,12 +763,19 @@
 		font-size:12px; 
 		color: #CFCFCF;
 	}
-	.label{
-	    padding: 15px 20px;
-	    font-size: 16px; 
-	    background-color:#FFF140;
-	    border-radius: 4px;
-	    color: #595959;
+	.count{
+		color: white;
+		font-size: 16px; 
+		z-index: 1;
+		margin-bottom:40px;
+		text-shadow: 0 0 15px #333, 0 0 15px #333, 0 0 0.15px #333;
+		letter-spacing:1px;
+	}
+	.count .number{
+		 font-size:21px; 
+		 color:#FFF140; 
+		 font-family:'Ubuntu Condensed', sans-serif; 
+		 letter-spacing:1px;
 	}
 	.form .ask{
 		/*padding-bottom: 15px;*/
