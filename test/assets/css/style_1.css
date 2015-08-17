@@ -213,8 +213,7 @@
 		background-color: white;
 	}
 	.card2 .form-info form{
-		/*color: #999999;*/
-		color: white;
+		color: #444444;
 		font-size: 16px;
 	}
 	.card2 .form-info input[type="radio"]{
@@ -496,8 +495,7 @@
 		background-color: white;
 	}
 	.card2 .form-info form{
-		/*color: #999999;*/
-		color: white;
+		color: #444444;
 		font-size: 16px;
 	}
 	.card2 .form-info input[type="radio"]{
@@ -743,7 +741,7 @@
 		padding-left: 5px;
 	}
 	.card2 .form-info form{
-		color: white;
+		color: #444444;
 		font-size: 16px;
 		padding-top: 5px;
 		margin-bottom: 10px;
