@@ -57,23 +57,23 @@
         });
     </script>
     <script>
-      function check_form(){
-          var uni = document.forms["Dpickform"]["entry.1820597178"].value;
-          var dep = document.forms["Dpickform"]["entry.1846109301"].value;
-          var mail = document.forms["Dpickform"]["entry.34462943"].value;
-          var sex = document.forms["Dpickform"]["entry.1523064061"].value;
+      function check_form(place){
+          var uni = document.forms["Dpickform_" + place]["entry.1820597178"].value;
+          var dep = document.forms["Dpickform_" + place]["entry.1846109301"].value;
+          var mail = document.forms["Dpickform_" + place]["entry.34462943"].value;
+          var sex = document.forms["Dpickform_" + place]["entry.1523064061"].value;
           if (uni == null || uni == "") {
-              ga('send', 'event', 'invalid', 'uni');
+              ga('send', 'event', 'invalid', 'uni', place);
               alert("大学名を正しく入力してください。");
               return false;
           }
           if (dep == null || dep == ""){
-              ga('send', 'event', 'invalid', 'dep');
+              ga('send', 'event', 'invalid', 'dep', place);
               alert("学部を正しく入力してください。");
               return false;
           }
           if (mail == null || mail == ""){
-              ga('send', 'event', 'invalid', 'mail');
+              ga('send', 'event', 'invalid', 'mail', place);
               alert("メールアドレスを正しく入力してください。");
               return false;
           }
@@ -109,7 +109,7 @@
                       }
                     </script>
                     <h3 class="hidden-xs hidden-sm"><b>Card</b></h3>
-                    <form id="formID" name="Dpickform"  method="post" action="https://docs.google.com/forms/d/1RniOByj6TO_wJmQ1sJEg31kJzTQSaY5dYjyh7gsJfTY/formResponse" target="hidden_iframe" onsubmit="return check_form()">
+                    <form id="Dpickform_up" name="Dpickform_up"  method="post" action="https://docs.google.com/forms/d/1RniOByj6TO_wJmQ1sJEg31kJzTQSaY5dYjyh7gsJfTY/formResponse" target="hidden_iframe" onsubmit="return check_form('up')">
                       <h3 class="visible-xs visible-sm">Card</h3>
                       <input type="text" name="entry.1820597178" placeholder="学校" required oninvalid="this.setCustomValidity('大学名を正しく入力してください。')" oninput="setCustomValidity('')" autofocus></br>
                       <input type="text" name="entry.1846109301" placeholder="学部" required oninvalid="this.setCustomValidity('学部を正しく入力してください。')" oninput="setCustomValidity('')" ></br>
@@ -167,18 +167,8 @@
               <div class="col-md-5">
                 <div class="card2">
                   <div class="form-info">
-                    <script type="text/javascript">
-                      var i = 0;
-                      function iframe_load() {
-                        console.log('loaded!');
-                        i++;
-                        if(i > 1){
-                          document.location.href="finish.html";
-                        }
-                      }
-                    </script>
                     <h3 class="hidden-xs hidden-sm"><b>Card</b></h3>
-                    <form id="formID" name="Dpickform"  method="post" action="https://docs.google.com/forms/d/1RniOByj6TO_wJmQ1sJEg31kJzTQSaY5dYjyh7gsJfTY/formResponse" target="hidden_iframe" onsubmit="return check_form()">
+                    <form id="Dpickform_down" name="Dpickform_down"  method="post" action="https://docs.google.com/forms/d/1RniOByj6TO_wJmQ1sJEg31kJzTQSaY5dYjyh7gsJfTY/formResponse" target="hidden_iframe" onsubmit="return check_form('down')">
                       <h3 class="visible-xs visible-sm"><b>Card</b></h3>
                       <input type="text" name="entry.1820597178" placeholder="学校" required oninvalid="this.setCustomValidity('大学名を正しく入力してください。')" oninput="setCustomValidity('')"></br>
                       <input type="text" name="entry.1846109301" placeholder="学部" required oninvalid="this.setCustomValidity('学部を正しく入力してください。')" oninput="setCustomValidity('')" ></br>
@@ -194,7 +184,6 @@
                       <input type="hidden" name="fvv" value="0">
                       <button type="submit" class="button1 btn btn-default">送信</button>
                     </form>
-                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="iframe_load()"></iframe>
                   </div>
                   <a href="https://docs.google.com/forms/d/1W493u_p6T1SX8YPQvKP_TSf8al3Foz85FJQ5niRGAqc/viewform" target="_new"><button class="btn-default btn-sm btn ask visible-xs visible-sm">お問い合わせ  <i class="fa fa-angle-right fa-lg"></i></button></a></br>
                   <small class="visible-xs visible-sm" style="margin-bottom: 60px;">あなたの個人情報は「個人情報保護に関する法律」に基づきお客様の同意なく当サービスの向上以外の目的で使用されることはありません。</small></br>
