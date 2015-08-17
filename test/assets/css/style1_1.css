@@ -1,0 +1,80 @@
+html,body { 
+   		height:100%
+	}
+@media screen and (min-width: 992px) {
+	.main{
+		margin-top: 100px;
+		margin-bottom: 200px;
+		height: 516px;
+		background-color: transparent;
+		padding: 70px 40px 0 40px;
+		position: relative;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#logo{
+		margin-top: 0;
+	}
+	.slogan{
+		text-align: center;
+		width: 100%;
+	}
+	.text{
+		margin-top: 60px;
+		width: 100%;
+		font-size: 18px;
+		line-height: 35px;
+		color: white;
+		margin-bottom: 0px;
+		text-align: center;
+	}
+}
+@media screen and (max-width: 991px) {
+	.main .row{
+		text-align: center;
+	}
+	.text{
+		margin: 40px auto 250px auto;
+		width: 90%;
+		font-size: 16px;
+		line-height: 35px;
+		color: white;
+	}
+	#logo{
+		margin-top: 40px;
+	}
+	.slogan{
+		font-size: 18px;
+	}
+}
+
+
+th{
+	padding: 0px 10px;
+	border: 1px solid white;
+	background-color: #7F99CE;
+	line-height: 2.85714rem;
+	height: 40px;
+	color: white;
+}
+td{
+	padding: 0px 10px;
+	border: 1px solid white;
+	line-height: 2.85714rem;
+	height: 40px;
+	color: white;
+}
+.ask{
+	color: white; 
+	border: 1px solid white;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #7F99CE;
+	margin-top: 20px;
+}
+.ask:hover, .ask:active, .ask:focus, .ask:active:focus{
+	background-color: #8DACD3;
+	color: white;
+	border: 1px solid white;
+}
