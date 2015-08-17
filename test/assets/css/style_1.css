@@ -46,13 +46,12 @@
 		box-shadow: none;
 	}
 	.label{
-	    padding: 10px 20px;
-	    margin-left: 30px; 
+	    padding: 15px 20px;
 	    font-size: 16px; 
+	    margin-left: 30px; 
 	    background-color:#FFF140;
 	    border-radius: 4px;
 	    color: #595959;
-	    /*FC5551*/
 	}
 	.button2{
 		background-color: transparent;
@@ -323,13 +322,12 @@
 		box-shadow: none;
 	}
 	.label{
-	    padding: 10px 20px;
+	    padding: 15px 20px;
+	    font-size: 16px; 
 	    margin-left: 30px; 
-	    font-size: 14px; 
 	    background-color:#FFF140;
 	    border-radius: 4px;
 	    color: #595959;
-	    /*FC5551*/
 	}
 	.button2{
 		background-color: transparent;
@@ -751,12 +749,11 @@
 		color: #CFCFCF;
 	}
 	.label{
-	    padding: 10px 20px;
-	    font-size: 18px; 
+	    padding: 15px 20px;
+	    font-size: 16px; 
 	    background-color:#FFF140;
 	    border-radius: 4px;
 	    color: #595959;
-	    /*FC5551*/
 	}
 	.form .ask{
 		/*padding-bottom: 15px;*/
