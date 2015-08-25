@@ -159,7 +159,7 @@
 		margin-bottom: 30px;
 	}
 	.standard{
-		background-color:rgba(252,248,39,0.2); 
+		background-color:rgba(185,185,185,0.2); 
 		margin-left:-10px; 
 		margin-right:-10px; 
 		padding-left:60px; 
@@ -450,7 +450,7 @@
 		margin-bottom: 30px;
 	}
 	.standard{
-		background-color:rgba(252,248,39,0.2); 
+		background-color:rgba(185,185,185,0.2); 
 		margin-left:-10px; 
 		margin-right:-10px; 
 		padding-left:60px; 
@@ -592,7 +592,7 @@
 	body{
 		padding: 0;
 		background-image: url('../img/bac_s_b.png');
-		background-size: 120% auto;
+		background-size: 100% auto;
 		background-repeat: no-repeat;
 	}
 	body .container-fluid{
@@ -668,12 +668,13 @@
 	.page2{
 		background-color: white;
 		width: 100%;
-		padding-top: 35px;
+		/*padding-top: 35px;*/
 	}
 	.page2 h1{
 		font-size: 24px;
 		margin-bottom: 15px;
 		color: #595959;
+		padding-top: 20px;
 	}
 	.page2 .text2{
 		font-size: 16px;
@@ -715,14 +716,17 @@
 		font-size: 14px;
 	}
 	.standard{
-		background-color:rgba(252,248,39,0.2); 
+		background-color:rgba(185,185,185,0.2); 
 		padding-top:10px;
 	}
 	.standard h3{
 		margin-top: 30px;
 		margin-bottom: 35px;
 	}
-
+	.interest{
+		background-color:rgba(185,185,185,0.2);
+		padding-top: 40px;
+	}
 	.form{
 		background-color: rgba(141,172,211,1);
 		margin-top: 0;
